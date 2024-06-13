@@ -4,91 +4,91 @@
             "id": "#1",
             "image": "https://virgocx.s3.ca-central-1.amazonaws.com/prod/2022/03/21/4bf758589dc84bd88ef85cadb634154e.png",
             "tag": "ETH",
-            "link": "https://virgocx.ca/page#/market/ETH_CAD"
+            "link": "#"
         },
         {
             "id": "#2",
             "image": "https://virgocx.s3.ca-central-1.amazonaws.com/prod/2022/03/21/b154ff43ff81471186ea1d73d90445e0.png",
             "tag": "BTC",
-            "link": "https://virgocx.ca/page#/market/BTC_CAD"
+            "link": "#"
         },
         {
             "id": "#3",
             "image": "https://virgocx.s3.ca-central-1.amazonaws.com/prod/2022/03/21/923540b461b34a7cb7c54b1791623ba2.png",
             "tag": "USDC",
-            "link": "https://virgocx.ca/page#/market/USDC_CAD"
+            "link": "#"
         },
         {
             "id": "#4",
             "image": "https://virgocx.s3.ca-central-1.amazonaws.com/prod/2021/12/29/e2a5b520891c49bf9a659b77eda8c3e0.png",
             "tag": "SOL",
-            "link": "https://virgocx.ca/page#/market/SOL_CAD"
+            "link": "#"
         },
         {
             "id": "#5",
             "image": "https://virgocx.s3.ca-central-1.amazonaws.com/prod/2022/03/21/8bb452bf2c5040249b15f5028b8634b5.png",
             "tag": "SHIB",
-            "link": "https://virgocx.ca/page#/market/SHIB_CAD"
+            "link": "#"
         },
         {
             "id": "#6",
             "image": "https://virgocx.s3.ca-central-1.amazonaws.com/prod/2023/06/30/aa3a9b4e8c4d47c7bce0a8b46fcbe9fd.png",
             "tag": "XRP",
-            "link": "https://virgocx.ca/page#/market/XRP_CAD"
+            "link": "#"
         },
         {
             "id": "#7",
             "image": "https://virgocx.s3.ca-central-1.amazonaws.com/prod/2023/05/12/2afc41484e88418097a25a14fc950bd1.png",
             "tag": "PEPE",
-            "link": "https://virgocx.ca/page#/market/PEPE_CAD"
+            "link": "#"
         },
         {
             "id": "#8",
             "image": "https://virgocx.s3.ca-central-1.amazonaws.com/prod/2022/03/21/888bb36778364a6bb99df36e003f1ebb.png",
             "tag": "MATIC",
-            "link": "https://virgocx.ca/page#/market/MATIC_CAD"
+            "link": "#"
         },
         {
             "id": "#9",
             "image": "https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/04/04/b053b59766ef4821a6289602746921a3.png",
             "tag": "PRIME",
-            "link": "https://virgocx.ca/page#/market/PRIME_CAD"
+            "link": "#"
         },
         {
             "id": "#10",
             "image": "https://virgocx.s3.ca-central-1.amazonaws.com/prod/2022/03/21/0972a7eb818047898164c64cc4187ce3.png",
             "tag": "LTC",
-            "link": "https://virgocx.ca/page#/market/LTC_CAD"
+            "link": "#"
         },
         {
             "id": "#11",
             "image": "https://virgocx.s3.ca-central-1.amazonaws.com/prod/2022/03/21/e68bca32f3e44bcd9ba7e776709874d9.png",
             "tag": "DOGE",
-            "link": "https://virgocx.ca/page#/market/DOGE_CAD"
+            "link": "#"
         },
         {
             "id": "#12",
             "image": "https://virgocx.s3.ca-central-1.amazonaws.com/prod/2023/03/23/5c11208ec3db4e2e953ed9f7713488b5.png",
             "tag": "ARB",
-            "link": "https://virgocx.ca/page#/market/ARB_CAD"
+            "link": "#"
         },
         {
             "id": "#13",
             "image": "https://virgocx.s3.ca-central-1.amazonaws.com/prod/2022/03/21/4eac8bd9cdec47b3a100da98e043cf1e.png",
             "tag": "CRV",
-            "link": "https://virgocx.ca/page#/market/CRV_CAD"
+            "link": "#"
         },
         {
             "id": "#14",
             "image": "https://virgocx.s3.ca-central-1.amazonaws.com/prod/2022/03/21/9e4776160cc14127af3f34b145f1ba9a.png",
             "tag": "GALA",
-            "link": "https://virgocx.ca/page#/market/GALA_CAD"
+            "link": "#"
         },
         {
             "id": "#15",
             "image": "https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/04/04/a03bb5620a404e2d9a46549e75fcbc3b.png",
             "tag": "JUP",
-            "link": "https://virgocx.ca/page#/market/JUP_CAD"
+            "link": "#"
         }
     ]
 }
