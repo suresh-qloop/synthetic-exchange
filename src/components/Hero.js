@@ -9,7 +9,7 @@ const Hero = () => {
             <div>
                 <div className='flex flex-col' style={{transform: "translate(0px, 0px)", opacity: "1"}}>
                     <div className='text-[30px] lg:text-[45px] font-bold sm:text-left text-center'>
-                        {`Power'd by`} <span className="text-[30px] lg:text-[45px] font-bold bg-gradient-to-r from-green-500 via-orange-500 to-red-500 bg-clip-text text-transparent">CRT</span> Token <span className="text-[30px] lg:text-[45px] font-normal text-[#6b47ed]">Qtum</span> DeFi.
+                        Power&#39;d by <span className="text-[30px] lg:text-[45px] font-bold bg-gradient-to-r from-green-500 via-orange-500 to-red-500 bg-clip-text text-transparent">CRT</span> Token <span className="text-[30px] lg:text-[45px] font-normal text-[#6b47ed]">Qtum</span> DeFi.
                     </div>
                     <a href="#" className=" !text-white w-[160px] lg:w-[218px] mt-[30px] lg:mt-[40px]"><div className="hidden sm:flex cursor-pointer bg-[#6B47ED] rounded-full w-[160px] lg:w-[218px] py-3 lg:py-4 justify-center font-semibold text-[14px] lg:text-[18px]" style={{transform: "none"}}>Download App</div></a>
                 </div>
