@@ -35,7 +35,7 @@ const MenuBar = () => {
     return (
         <div className='bg-[#FAFAFA]'>
             <div className='hidden container mx-auto justify-center py-[48px] z-50 bg-[#FAFAFA] sm:flex relative'>
-                <div className='flex justify-between items-center z-50 w-[90%] xl:w-[95%] h-[60px] lg:h-[68px] xl:h-[93px] bg-white shadow-[0px_0px_25px_4px_rgba(234,234,234,0.8)] rounded-[50px]'>
+                <div className='flex justify-between items-center z-50 w-[90%] xl:w-[95%] h-[60px] lg:h-[68px] xl:h-[93px] bg-white shadow-[0px_0px_25px_4px_rgba(234,234,234,0.8)] rounded-[50px] lg:mx-[4%] xl:mx-0 2xl:mx-[9%]'>
                     <a href="#">
                         <img alt="" className="ml-[19px] lg:ml-[23px] xl:ml-[49px] w-[110px] md:w-[130px] lg:w-[140px] xl:w-[193px]" src="/virgocx_logo.svg" />
                     </a>
@@ -68,8 +68,8 @@ const MenuBar = () => {
                 </div>
                 {activeDropdown === 1 && (
                     <>
-                        <div className='absolute bg-white  shadow-[0px_0px_25px_4px_rgba(234,234,234,0.8)] rounded-[50px] w-[90%] xl:w-[95%] h-[375px] lg:h-[420px] xl:h-[500px] z-10 pb-[30px]' onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={() => handleMouseLeave()}></div>
-                        <div className='z-10 absolute top-[141px] w-[90%] xl:w-[95%] pt-[25px] lg:pt-[42px] px-[30px] xl:px-[86px] animate-fade-in flex justify-between' onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={() => handleMouseLeave()}>
+                        <div className='absolute bg-white  shadow-[0px_0px_25px_4px_rgba(234,234,234,0.8)] rounded-[50px] w-[90%] xl:w-[95%] 2xl:w-[82%] h-[375px] lg:h-[420px] xl:h-[500px] z-10 pb-[30px]' onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={() => handleMouseLeave()}></div>
+                        <div className='z-10 absolute top-[141px] w-[90%] xl:w-[95%] 2xl:w-[82%] pt-[25px] lg:pt-[42px] px-[30px] xl:px-[86px] animate-fade-in flex justify-between' onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={() => handleMouseLeave()}>
                             <div className='w-[60%] xl:w-[50%]'>
                                 <h6 className="mb-[35px] lg:mb-[48px] font-bold text-[18px] lg:text-[20px] text-[#616161] NunitoBold">Crypto Trading</h6>
                                 <div>
@@ -97,8 +97,8 @@ const MenuBar = () => {
                 )}
                 {activeDropdown === 2 && (
                     <>
-                        <div className='absolute  bg-white  shadow-[0px_0px_25px_4px_rgba(234,234,234,0.8)] rounded-[50px] w-[90%] xl:w-[95%] h-[385px] lg:h-[430px] xl:h-[500px] z-10 pb-[30px]'></div>
-                        <div className='z-10 absolute top-[141px]  w-[90%] xl:w-[95%] pt-[30px] xl:pt-[42px] px-[30px] xl:px-[86px] animate-fade-in flex justify-between'>
+                        <div className='absolute  bg-white  shadow-[0px_0px_25px_4px_rgba(234,234,234,0.8)] rounded-[50px] w-[90%] xl:w-[95%] 2xl:w-[82%] h-[385px] lg:h-[430px] xl:h-[500px] z-10 pb-[30px]'></div>
+                        <div className='z-10 absolute top-[141px]  w-[90%] xl:w-[95%] 2xl:w-[82%] pt-[30px] xl:pt-[42px] px-[30px] xl:px-[86px] animate-fade-in flex justify-between'>
                             <div className='w-[55%] lg:w-[60%] flex flex-wrap'>
                                 <a className="w-[50%] text-[#616161] font-bold text-[16px] lg:text-[18px] xl:text-[20px] MatterBold Header_drop_down_a__QcFb6" href="#">About Us</a>
                                 <a className="w-[50%] text-[#616161] font-bold text-[16px] lg:text-[18px] xl:text-[20px] MatterBold Header_drop_down_a__QcFb6" href="#">Contact Us</a>
@@ -115,8 +115,8 @@ const MenuBar = () => {
                 )}
                 {activeDropdown === 3 && (
                     <>
-                        <div className='absolute  bg-white  shadow-[0px_0px_25px_4px_rgba(234,234,234,0.8)] rounded-[50px] w-[90%] xl:w-[95%] h-[320px] lg:h-[378px] xl:h-[434px] z-10 pb-[30px]'></div>
-                        <div className='z-10 absolute top-[141px] justify-between flex py-[20px] lg:py-[30px] xl:py-[40px] px-[25px] lg:px-[40px] xl:px-[60px] w-[90%] xl:w-[95%] animate-fade-in'>
+                        <div className='absolute  bg-white  shadow-[0px_0px_25px_4px_rgba(234,234,234,0.8)] rounded-[50px] w-[90%] xl:w-[95%] 2xl:w-[82%] h-[320px] lg:h-[378px] xl:h-[434px] z-10 pb-[30px]'></div>
+                        <div className='z-10 absolute top-[141px] justify-between flex py-[20px] lg:py-[30px] xl:py-[40px] px-[25px] lg:px-[40px] xl:px-[60px] w-[90%] xl:w-[95%] 2xl:w-[82%] animate-fade-in'>
                             <div className=' text-center w-[254px] h-[174px]'>
                                 <a className="text-[#616161] font-semibold text-[14px] lg:text-[16px] xl:text-[18px] MatterBold block Header_drop_down_a__QcFb6" href="#"><img className="mb-[20px]" src="/Virgo_Boost_Program.png" alt="learn" />Virgo Boost Program</a>
                             </div>
@@ -134,8 +134,8 @@ const MenuBar = () => {
                 )}
                 {activeDropdown === 4 && (
                     <>
-                        <div className='absolute  bg-white  shadow-[0px_0px_25px_4px_rgba(234,234,234,0.8)] rounded-[50px] w-[90%] xl:w-[95%] h-[355px] lg:h-[415px] xl:h-[434px] z-10 pb-[30px]'></div>
-                        <div className='z-10 absolute top-[141px] justify-between flex py-[30px] lg:py-[50px] xl:py-[70px] px-[60px] lg:px-[100px] xl:px-[180px]  w-[90%] xl:w-[95%] animate-fade-in'>
+                        <div className='absolute  bg-white  shadow-[0px_0px_25px_4px_rgba(234,234,234,0.8)] rounded-[50px] w-[90%] xl:w-[95%] 2xl:w-[82%] h-[355px] lg:h-[415px] xl:h-[434px] z-10 pb-[30px]'></div>
+                        <div className='z-10 absolute top-[141px] justify-between flex py-[30px] lg:py-[50px] xl:py-[70px] px-[60px] lg:px-[100px] xl:px-[180px]  w-[90%] xl:w-[95%] 2xl:w-[82%] animate-fade-in'>
                             <div className=' text-center w-[398px] h-[174px]'>
                                 <a className="text-[#616161] font-semibold text-[14px] lg:text-[16px] xl:text-[18px] MatterBold block Header_drop_down_a__QcFb6" href="#"><img className="mb-[20px]" src="/giftcard-entyBg.png" alt="learn" />Virgo Gift - Crypto Gift Card</a>
                             </div>

@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className='bg-[#FAFAFA] xl:w-full px-[40px] xl:px-0'>
       <div className='flex flex-col justify-center items-center Matter container mx-auto pb-[20px] sm:pb-[100px] pt-[60px] sm:pt-0 sm:pr-[50px] xl:pl-[90px] xl:pr-[90px]'>
-        <div className='flex flex-col items-center w-full sm:flex-row sm:justify-between'>
+        <div className='flex flex-col items-center sm:flex-row sm:justify-between lg:mx-[4%] xl:mx-0 2xl:mx-[9%]'>
             <div>
                 <div className='flex flex-col' style={{transform: "translate(0px, 0px)", opacity: "1"}}>
                     <div className='text-[30px] lg:text-[45px] font-bold sm:text-left text-center'>

@@ -33,7 +33,7 @@ const Hero2 = () => {
 
     return (
         <div className='container w-full mx-auto bg-white'>
-            <div className='sm:relative sm:h-[800px]'>
+            <div className='sm:relative sm:h-[800px] lg:mx-[4%] xl:mx-0 2xl:mx-[9%]'>
                 <div className='flex flex-col items-center justify-center mx-auto sm:w-full Matter'>
                     <div className='block sm:hidden mt-[80px] w-fit mx-auto mb-16'>
                         <Link href="#"><div className="cursor-pointer w-[264px] h-[140px] bg-white rounded-[30px] mb-[24px] sm:mb-[0px] border-black border hover:scale-110 transition-all title-hover" style={{borderRadius: "20px", borderColor: "#d4ccf7"}}>
