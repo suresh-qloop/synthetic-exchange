@@ -19,22 +19,22 @@ const Hero = () => {
                 <div className='relative w-screen gallery_m px-[20px] block sm:hidden mt-[30px]'>
                     <Carousel dots dotPosition='bottom'>
                         <div style={{ width: "0px"}}>
-                        <a href="#" rel="noopener noreferrer" target="_blank"><img className="w-full rounded-[14px]" alt="" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
+                        <a href="#"><img className="w-full rounded-[14px]" alt="gallery_img" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
                         </div>
                         <div style={{ width: "0px"}}>
-                        <a href="#" rel="noopener noreferrer" target="_blank"><img className="w-full rounded-[14px]" alt="" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
+                        <a href="#"><img className="w-full rounded-[14px]" alt="gallery_img" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
                         </div>
                         <div style={{ width: "0px"}}>
-                        <a href="#" rel="noopener noreferrer" target="_blank"><img className="w-full rounded-[14px]" alt="" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
+                        <a href="#"><img className="w-full rounded-[14px]" alt="gallery_img" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
                         </div>
                         <div style={{ width: "0px"}}>
-                        <a href="#" rel="noopener noreferrer" target="_blank"><img className="w-full rounded-[14px]" alt="" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
+                        <a href="#"><img className="w-full rounded-[14px]" alt="gallery_img" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
                         </div>
                         <div style={{ width: "0px"}}>
-                        <a href="#" rel="noopener noreferrer" target="_blank"><img className="w-full rounded-[14px]" alt="" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
+                        <a href="#"><img className="w-full rounded-[14px]" alt="gallery_img" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
                         </div>
                         <div style={{ width: "0px"}}>
-                        <a href="#" rel="noopener noreferrer" target="_blank"><img className="w-full rounded-[14px]" alt="" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
+                        <a href="#"><img className="w-full rounded-[14px]" alt="gallery_img" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
                         </div>
                     </Carousel>
                 </div>
@@ -50,22 +50,22 @@ const Hero = () => {
                         slidesToScroll={1}
                     >
                         <div>
-                            <a href="#" rel="noopener noreferrer" target="_blank"><img className="w-[260px] lg:w-[310px] xl:w-[426px] h-[120px] lg:h-[155px] xl:h-[180px] rounded-[14px]" alt="" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
+                            <a href="#"><img className="w-[260px] lg:w-[310px] xl:w-[426px] h-[120px] lg:h-[155px] xl:h-[180px] rounded-[14px]" alt="gallery_img" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
                         </div>
                         <div>
-                            <a href="#" rel="noopener noreferrer" target="_blank"><img className="w-[260px] lg:w-[310px] xl:w-[426px] h-[120px] lg:h-[155px] xl:h-[180px] rounded-[14px]" alt="" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/06/11/859ff43f5e304ee496d5af3a6f623750.png"/></a>
+                            <a href="#"><img className="w-[260px] lg:w-[310px] xl:w-[426px] h-[120px] lg:h-[155px] xl:h-[180px] rounded-[14px]" alt="gallery_img" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/06/11/859ff43f5e304ee496d5af3a6f623750.png"/></a>
                         </div>
                         <div>
-                            <a href="#" rel="noopener noreferrer" target="_blank"><img className="w-[260px] lg:w-[310px] xl:w-[426px] h-[120px] lg:h-[155px] xl:h-[180px] rounded-[14px]" alt="" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
+                            <a href="#"><img className="w-[260px] lg:w-[310px] xl:w-[426px] h-[120px] lg:h-[155px] xl:h-[180px] rounded-[14px]" alt="gallery_img" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
                         </div>
                         <div>
-                            <a href="#" rel="noopener noreferrer" target="_blank"><img className="w-[260px] lg:w-[310px] xl:w-[426px] h-[120px] lg:h-[155px] xl:h-[180px] rounded-[14px]" alt="" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
+                            <a href="#"><img className="w-[260px] lg:w-[310px] xl:w-[426px] h-[120px] lg:h-[155px] xl:h-[180px] rounded-[14px]" alt="gallery_img" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
                         </div>
                         <div>
-                            <a href="#" rel="noopener noreferrer" target="_blank"><img className="w-[260px] lg:w-[310px] xl:w-[426px] h-[120px] lg:h-[155px] xl:h-[180px] rounded-[14px]" alt="" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
+                            <a href="#"><img className="w-[260px] lg:w-[310px] xl:w-[426px] h-[120px] lg:h-[155px] xl:h-[180px] rounded-[14px]" alt="gallery_img" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
                         </div>
                         <div>
-                            <a href="#" rel="noopener noreferrer" target="_blank"><img className="w-[260px] lg:w-[310px] xl:w-[426px] h-[120px] lg:h-[155px] xl:h-[180px] rounded-[14px]" alt="" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
+                            <a href="#"><img className="w-[260px] lg:w-[310px] xl:w-[426px] h-[120px] lg:h-[155px] xl:h-[180px] rounded-[14px]" alt="gallery_img" src="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2024/02/06/e702c4663fc4403187d4f5f84265f6e7.png"/></a>
                         </div>
                     </Carousel>
                 </div>

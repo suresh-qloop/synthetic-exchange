@@ -1,3 +1,5 @@
+import About from "@/components/About";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Hero2 from "@/components/Hero2";
 import MenuBar from "@/components/MenuBar";
@@ -10,6 +12,8 @@ export default function Home() {
       <MenuBar />
       <Hero />
       <Hero2 />
+      <About />
+      <Footer />
     </div>
   );
 }

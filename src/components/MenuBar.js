@@ -37,24 +37,24 @@ const MenuBar = () => {
             <div className='hidden container mx-auto justify-center py-[48px] z-50 bg-[#FAFAFA] sm:flex relative'>
                 <div className='flex justify-between items-center z-50 w-[90%] xl:w-[95%] h-[60px] lg:h-[68px] xl:h-[93px] bg-white shadow-[0px_0px_25px_4px_rgba(234,234,234,0.8)] rounded-[50px] lg:mx-[4%] xl:mx-0 2xl:mx-[9%]'>
                     <a href="#">
-                        <img alt="" className="ml-[19px] lg:ml-[23px] xl:ml-[49px] w-[110px] md:w-[130px] lg:w-[140px] xl:w-[193px]" src="/virgocx_logo.svg" />
+                        <img alt="logo" className="ml-[19px] lg:ml-[23px] xl:ml-[49px] w-[110px] md:w-[130px] lg:w-[140px] xl:w-[193px]" src="/virgocx_logo.svg" />
                     </a>
                     <div className='text-[14px] xl:text-[18px] pr-[18px] lg:pr-[22px] xl:pr-[48px]'>
                         <span className='false cursor-pointer text-[#66617f] hover:text-[#66617f]' onMouseEnter={() => handleMouseEnter(1)}
                             onMouseLeave={() => handleMouseLeave()}>
-                            Documents <img alt="" className="false ml-[4px] lg:ml-[10px] xl:ml-[15px] w-[8px] lg:w-[10px] xl:w-[12px] inline-block" src="/downarrow.svg" />
+                            Documents <img alt="downarrow" className="false ml-[4px] lg:ml-[10px] xl:ml-[15px] w-[8px] lg:w-[10px] xl:w-[12px] inline-block" src="/downarrow.svg" />
                         </span>
                         <span className='false cursor-pointer text-[#66617f] hover:text-[#66617f] ml-[8px] md:ml-[10px] lg:ml-[15px] xl:ml-[26px]' onMouseEnter={() => handleMouseEnter(2)}
                             onMouseLeave={() => handleMouseLeave()}>
-                            Top Traders <img alt="" className="false ml-[4px] lg:ml-[10px] xl:ml-[15px] w-[8px] lg:w-[10px] xl:w-[12px] inline-block" src="/downarrow.svg" />
+                            Top Traders <img alt="downarrow" className="false ml-[4px] lg:ml-[10px] xl:ml-[15px] w-[8px] lg:w-[10px] xl:w-[12px] inline-block" src="/downarrow.svg" />
                         </span>
                         <span className='false cursor-pointer text-[#66617f] hover:text-[#66617f] ml-[8px] md:ml-[10px] lg:ml-[15px] xl:ml-[26px]' onMouseEnter={() => handleMouseEnter(3)}
                             onMouseLeave={() => handleMouseLeave()}>
-                            DEX <img alt="" className="false ml-[4px] lg:ml-[10px] xl:ml-[15px] w-[8px] lg:w-[10px] xl:w-[12px] inline-block" src="/downarrow.svg" />
+                            DEX <img alt="downarrow" className="false ml-[4px] lg:ml-[10px] xl:ml-[15px] w-[8px] lg:w-[10px] xl:w-[12px] inline-block" src="/downarrow.svg" />
                         </span>
                         <span className='false cursor-pointer text-[#66617f] hover:text-[#66617f] ml-[8px] md:ml-[10px] lg:ml-[15px] xl:ml-[26px]' onMouseEnter={() => handleMouseEnter(4)}
                             onMouseLeave={() => handleMouseLeave()}>
-                            Gift Card <img alt="" className="false ml-[4px] lg:ml-[10px] xl:ml-[15px] w-[8px] lg:w-[10px] xl:w-[12px] inline-block" src="/downarrow.svg" />
+                            Gift Card <img alt="downarrow" className="false ml-[4px] lg:ml-[10px] xl:ml-[15px] w-[8px] lg:w-[10px] xl:w-[12px] inline-block" src="/downarrow.svg" />
                         </span>
                         <Dropdown
                             overlay={menu}
@@ -62,7 +62,7 @@ const MenuBar = () => {
                             placement="bottom"
                             className='inline-block ml-[8px] md:ml-[10px] lg:ml-[15px] xl:ml-[20px]'
                         >
-                            <div className='cursor-pointer text-[14px] xl:text-[18px]'><img src="/ca.png" alt="" className='inline w-[12px] h-[12px] lg:w-[16px] lg:h-[16px] mr-[5px] md:mr-[8px] lg:mr-[10px]' />EN<img alt="" src="/downarrow.svg" className="ml-[4px] lg:ml-[5px] w-[8px] lg:w-[10px] xl:w-[12px] inline-block" /></div>
+                            <div className='cursor-pointer text-[14px] xl:text-[18px]'><img src="/ca.png" alt="ca" className='inline w-[12px] h-[12px] lg:w-[16px] lg:h-[16px] mr-[5px] md:mr-[8px] lg:mr-[10px]' />EN<img alt="downarrow" src="/downarrow.svg" className="ml-[4px] lg:ml-[5px] w-[8px] lg:w-[10px] xl:w-[12px] inline-block" /></div>
                         </Dropdown>
                     </div>
                 </div>
@@ -74,23 +74,23 @@ const MenuBar = () => {
                                 <h6 className="mb-[35px] lg:mb-[48px] font-bold text-[18px] lg:text-[20px] text-[#616161] NunitoBold">Crypto Trading</h6>
                                 <div>
                                     <div className='inline-block w-[210px]'>
-                                        <a className="my-[40px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6" href="#"><img alt="" className="mr-[12px] w-[40px] inline" src="/market.png" />Market</a>
+                                        <a className="my-[40px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6" href="#"><img alt="market" className="mr-[12px] w-[40px] inline" src="/market.png" />Market</a>
                                     </div>
                                     <div className='inline-block'>
-                                        <a className="my-[40px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6" href="#"><img alt="" className="mr-[12px] w-[40px] inline" src="/security.png" />Security</a>
+                                        <a className="my-[40px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6" href="#"><img alt="security" className="mr-[12px] w-[40px] inline" src="/security.png" />Security</a>
                                     </div>
                                 </div>
                                 <div className='my-[35px] lg:my-[48px]'>
                                     <div className='inline-block min-w-[210px]'>
-                                        <a className="my-[48px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6 mr-[15px]" href="#"><img alt="" className="mr-[12px] w-[40px] inline" src="/fees.png" />Fees &amp; Funding</a>
+                                        <a className="my-[48px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6 mr-[15px]" href="#"><img alt="fees" className="mr-[12px] w-[40px] inline" src="/fees.png" />Fees &amp; Funding</a>
                                     </div>
                                     <div className='inline-block'>
-                                        <a className="my-[40px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6" href="#"><img alt="" className="mr-[12px] w-[40px] inline" src="/api.png" />API</a>
+                                        <a className="my-[40px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6" href="#"><img alt="api" className="mr-[12px] w-[40px] inline" src="/api.png" />API</a>
                                     </div>
                                 </div>
                             </div>
                             <div className='w-[40%] xl:w-[50%]'>
-                                <a className="text-[#616161] inline-block font-bold text-[20px] lg:text-[24px] MatterBold Header_drop_down_a__QcFb6" href="#">Wealth<img alt="" className="inline w-[150px] lg:w-[163px] float-right pt-2" src="/VirgoOTC_logo_full.png" /><img alt="" className="mt-[25px] lg:mt-[10px] w-full" src="/OTC.png" /></a>
+                                <a className="text-[#616161] inline-block font-bold text-[20px] lg:text-[24px] MatterBold Header_drop_down_a__QcFb6" href="#">Wealth<img alt="welth" className="inline w-[150px] lg:w-[163px] float-right pt-2" src="/VirgoOTC_logo_full.png" /><img alt="" className="mt-[25px] lg:mt-[10px] w-full" src="/OTC.png" /></a>
                             </div>
                         </div>
                     </>
