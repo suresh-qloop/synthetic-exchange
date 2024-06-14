@@ -7,7 +7,9 @@ export async function GET() {
         headers: {
             accept: 'application/json',
             'x-cg-pro-api-key': `${process.env.NEXT_COINGECKO_API_KEY}`,
-            'Cache-Control': 'no-cache'
+            'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+            'Pragma': 'no-cache',
+            'Expires': '0'
         }
     }
 

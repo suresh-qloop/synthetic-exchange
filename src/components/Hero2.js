@@ -9,7 +9,14 @@ const Hero2 = () => {
         const fetchData = async () => {
             
             try {
-                const response = await fetch('/api/cryptoprices');
+                const response = await fetch('/api/cryptoprices', {
+                    method: 'GET',
+                    headers: {
+                        'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+                        'Pragma': 'no-cache',
+                        'Expires': '0'
+                    }
+                });
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
