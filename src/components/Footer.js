@@ -10,23 +10,22 @@ const Footer = () => {
     const [imageSrcApp, setImageSrcApp] = useState('/appStore.png');
     const [imageSrcGoogle, setImageSrcGoogle] = useState('/googleStore.png');
     const [imageSrcApk, setImageSrcApk] = useState('/apk.png');
-    const [activeKey, setActiveKey] = useState(null);
 
-    const expandRotateClass = (key) => {
-        return `w-[13px] transition-transform duration-300 ${activeKey === key ? 'rotate-180' : ''}`
+    const expandRotateClass = (isActive) => {
+        return `w-[13px] transition-transform duration-300 ${isActive ? 'rotate-180' : ''}`
     }
 
     return (
-        <footer className='bg-[#FBFBFB] container mx-auto'>
+        <div className='bg-[#FBFBFB]'>
+            <footer className='container mx-auto'>
             <div className='lg:mx-[4%] xl:mx-0 2xl:mx-[9%] px-[20px] sm:px-[60px] lg:px-[110px] xl:px-[142px] sm:pt-[55px] sm:pb-[46px]'>
                 <div className='block sm:hidden'>
                     <div>
                         <Collapse
                             accordion
-                            expandIcon={({ isActive }) => <img src='/black_arrow_down.svg' alt='downarrow' className={expandRotateClass(isActive ? activeKey : null)} />}
+                            expandIcon={({ isActive }) => <img src='/black_arrow_down.svg' alt='downarrow' className={expandRotateClass(isActive)} />}
                             expandIconPosition='end'
                             ghost
-                            onChange={(key) => setActiveKey(key)}
                         >
                             <Panel header="SoFi" key="1">
                                 <div className='flex flex-col'>
@@ -154,10 +153,10 @@ const Footer = () => {
                         <img src="/ca.png" alt="ca" className='h-[15px] xl:h-[24px] mr-[16px] sm:mr-[14px] lg:mr-[20px]' />
                         <p className='text-[14px] sm:text-[13px] lg:text-[14px] xl:text-[18px] text-[#616161]'>FINTRAC Registered MSB # M19955733 Restricted Dealer registered with CSA</p>
                     </div>
-                    <div className='text-[16px] sm:text-[13px] lg:text-[14px] xl:text-[18px] text-[#616161] sm:mt-[12px] lg:mt-[14px] xl:mt-[19px] text-center mb-[19px] sm:mb-[0px]'>@2024 Virgo Group of Companies. All rights reserved.</div>
                 </div>
             </div>
         </footer>
+        </div>
     )
 }
 

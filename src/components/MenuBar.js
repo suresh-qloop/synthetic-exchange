@@ -17,7 +17,6 @@ const menu = (
 const MenuBar = () => {
 
     const [activeDropdown, setActiveDropdown] = useState(null);
-    const [activeKey, setActiveKey] = useState(null);
     const [isOpen, setIsOpen] = useState(false);
 
     const handleMouseEnter = (index) => {
@@ -28,9 +27,10 @@ const MenuBar = () => {
         setActiveDropdown(null);
     };
 
-    const expandRotateClass = (key) => {
-        return `transition-transform duration-300 ${activeKey === key ? 'rotate-180' : ''}`
+    const expandRotateClass = (isActive) => {
+        return `transition-transform duration-300 ${isActive ? 'rotate-180' : ''}`
     }
+    
 
     return (
         <div className='bg-[#FAFAFA]'>
@@ -164,10 +164,9 @@ const MenuBar = () => {
                 <div className='pt-[16px]'>
                     <Collapse 
                         accordion 
-                        expandIcon={({ isActive }) => <img src='/arrow_down_purple.svg' alt='downarrow' className={expandRotateClass(isActive ? activeKey : null)} />} 
+                        expandIcon={({ isActive }) => <img src='/arrow_down_purple.svg' alt='downarrow' className={expandRotateClass(isActive)} />} 
                         expandIconPosition='end' 
                         ghost
-                        onChange={(key) => setActiveKey(key)}
                     >
                     <Panel header="Documents" key="1">
                         <div className='bg-[#F7F5FF] px-[16px] py-[12px]'>

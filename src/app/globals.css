@@ -299,3 +299,12 @@ footer .ant-collapse-content-box {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
 }
+
+.content-hover {
+  display: none;
+}
+
+.span-hover:hover .content-hover {
+  display: block;
+}
+
