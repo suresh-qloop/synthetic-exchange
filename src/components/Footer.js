@@ -129,7 +129,7 @@ const Footer = () => {
                     </div>
                     <div className='flex sm:mx-auto mt-[41px] sm:mt-[0px] sm:mr-[8px] items-center justify-between sm:justify-around'>
                         <Link href="#">
-                            <img src="/twitter.png" alt="twitter" className='w-[30px] h-[30px] sm:w-[20px] lg:w-[27px] sm:w-[20px] lg:h-[27px] xl:w-[35px] xl:h-[35px] cursor-pointer sm:ml-[24px]' />
+                            <img src="/twitter.png" alt="twitter" className='w-[30px] h-[30px] sm:w-[20px] lg:w-[27px] sm:h-[20px] lg:h-[27px] xl:w-[35px] xl:h-[35px] cursor-pointer sm:ml-[24px]' />
                         </Link>
                         <Link href="#">
                             <img src="/facebook.png" alt="facebook" className='w-[30px] h-[30px] sm:w-[20px] lg:w-[27px] sm:h-[20px] lg:h-[27px] xl:w-[35px] xl:h-[35px] cursor-pointer sm:ml-[24px]' />
