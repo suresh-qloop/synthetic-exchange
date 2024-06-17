@@ -308,3 +308,25 @@ footer .ant-collapse-content-box {
   display: block;
 }
 
+@media (max-width: 640px) {
+
+  .ant-tabs-nav-list {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+  }
+
+  .ant-tabs .ant-tabs-tab+.ant-tabs-tab {
+    margin: 0;
+}
+}
+.shadow-bottom-only::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10px; /* Adjust height to control the shadow's vertical extent */
+  box-shadow: 0px 10px 25px 4px rgba(234, 234, 234, 0.8);
+  z-index: -1; /* Ensure the shadow stays behind the element */
+}
