@@ -53,7 +53,7 @@ const MenuBar = () => {
                                             <h6 className="mb-[35px] lg:mb-[48px] font-bold text-[18px] lg:text-[20px] text-[#616161] NunitoBold">Crypto Trading</h6>
                                             <div>
                                                 <div className='inline-block w-[210px]'>
-                                                    <a className="my-[40px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6 font-medium hover:text-black hover:underline" href="#"><img alt="market" className="mr-[12px] w-[40px] inline" src="/market.png" />Market</a>
+                                                    <a className="my-[40px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6 font-medium hover:text-black hover:underline" href="/market"><img alt="market" className="mr-[12px] w-[40px] inline" src="/market.png" />Market</a>
                                                 </div>
                                                 <div className='inline-block'>
                                                     <a className="my-[40px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6 font-medium hover:text-black hover:underline" href="/crt-token"><img alt="security" className="mr-[12px] w-[40px] inline" src="/security.png" />CRT Token</a>
@@ -186,7 +186,7 @@ const MenuBar = () => {
                     >
                         <Panel header="Documents" key="1">
                             <div className='bg-[#F7F5FF] px-[16px] py-[12px]'>
-                                <a className="block align-middle mt-[12px] mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="#"><img alt="" className="mr-[21px] w-[17px] inline" src="/market.png" />Market</a>
+                                <a className="block align-middle mt-[12px] mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="/market"><img alt="" className="mr-[21px] w-[17px] inline" src="/market.png" />Market</a>
                                 <a className="block align-middle mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="/crt-token"><img alt="" className="mr-[21px] w-[17px] inline" src="/security.png" /><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>CRT Token</font></font></a>
                                 <a className="block align-middle mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="#"><img alt="" className="mr-[21px] w-[17px] inline" src="/fees.png" /><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>Rate Standard</font></font></a>
                                 <a className="block align-middle mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="#"><img alt="" className="mr-[21px] w-[17px] inline" src="/api.png" /><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>API</font></font></a>
