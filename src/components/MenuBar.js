@@ -33,8 +33,8 @@ const MenuBar = () => {
 
 
     return (
-        <div className='bg-[#F7F5FF]'>
-            <div className='hidden container mx-auto justify-center py-[48px] z-50 bg-[#F7F5FF] sm:flex relative'>
+        <div className='bg-[#F2F2F2]'>
+            <div className='hidden container mx-auto justify-center py-[55px] z-50 bg-[#F2F2F2] sm:flex relative'>
                 <div className='flex justify-between items-center z-50 w-[90%] xl:w-[95%] h-[60px] lg:h-[68px] xl:h-[93px] bg-white shadow-[0px_0px_25px_4px_rgba(234,234,234,0.8)] rounded-[50px] lg:mx-[4%] xl:mx-0 2xl:mx-[9%]'>
                     <a href="/">
                         <img alt="logo" className="ml-[19px] lg:ml-[23px] xl:ml-[49px] w-[110px] md:w-[130px] lg:w-[140px] xl:w-[193px]" src="/sX.jpg" />
@@ -47,7 +47,7 @@ const MenuBar = () => {
                             </span>
                             {activeDropdown === 1 && (
                                 <>
-                                    <div className='absolute bg-white top-[85px] lg:top-[90px] xl:top-[105px] left-[39px] lg:left-[50px] xl:left-[31px] 2xl:left-[138px] shadow-bottom-only rounded-b-[50px] w-[90%] xl:w-[95%] 2xl:w-[82%] h-[310px] lg:h-[378px] xl:h-[464px] z-10 pb-[30px]' onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={() => handleMouseLeave()}></div>
+                                    <div className='absolute bg-white top-[93px] lg:top-[97px] xl:top-[112px] left-[39px] lg:left-[50px] xl:left-[31px] 2xl:left-[138px] shadow-bottom-only rounded-b-[50px] w-[90%] xl:w-[95%] 2xl:w-[82%] h-[310px] lg:h-[378px] xl:h-[464px] z-10 pb-[30px]' onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={() => handleMouseLeave()}></div>
                                     <div className='z-10 absolute left-[40px] lg:left-[50px] xl:left-[31px] 2xl:left-[139px] top-[141px] w-[90%] xl:w-[95%] 2xl:w-[82%] pt-[25px] lg:pt-[42px] px-[30px] xl:px-[86px] animate-fade-in flex justify-between' onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={() => handleMouseLeave()}>
                                         <div className='w-[60%] xl:w-[50%]'>
                                             <h6 className="mb-[35px] lg:mb-[48px] font-bold text-[18px] lg:text-[20px] text-[#616161] NunitoBold">Crypto Trading</h6>
@@ -69,7 +69,9 @@ const MenuBar = () => {
                                             </div>
                                         </div>
                                         <div className='w-[40%] xl:w-[50%]'>
-                                            <a className="text-[#616161] inline-block font-bold text-[20px] lg:text-[24px] MatterBold Header_drop_down_a__QcFb6 font-medium hover:text-black hover:underline" href="#">Wealth<img alt="welth" className="inline w-[150px] lg:w-[163px] float-right pt-2" src="/VirgoOTC_logo_full.png" /><img alt="" className="mt-[25px] lg:mt-[10px] w-full" src="/OTC.png" /></a>
+                                            <a className="text-[#616161] inline-block font-bold text-[20px] lg:text-[24px] MatterBold Header_drop_down_a__QcFb6 font-medium hover:text-black hover:underline" href="#">Wealth
+                                            <img alt="" className="mt-[25px] lg:mt-[10px] w-full" src="/OTC.png" />
+                                            </a>
                                         </div>
                                     </div>
                                 </>
@@ -82,7 +84,7 @@ const MenuBar = () => {
                             </span>
                             {activeDropdown === 2 && (
                                 <>
-                                    <div className='absolute bg-white top-[85px] lg:top-[90px] xl:top-[105px] left-[39px] lg:left-[50px] xl:left-[31px] 2xl:left-[138px] shadow-bottom-only rounded-b-[50px] w-[90%] xl:w-[95%] 2xl:w-[82%] h-[325px] lg:h-[375px] xl:h-[434px] z-10 pb-[30px]' onMouseEnter={() => handleMouseEnter(2)}
+                                    <div className='absolute bg-white top-[93px] lg:top-[97px] xl:top-[112px] left-[39px] lg:left-[50px] xl:left-[31px] 2xl:left-[138px] shadow-bottom-only rounded-b-[50px] w-[90%] xl:w-[95%] 2xl:w-[82%] h-[325px] lg:h-[375px] xl:h-[434px] z-10 pb-[30px]' onMouseEnter={() => handleMouseEnter(2)}
                                         onMouseLeave={() => handleMouseLeave()}></div>
                                     <div className='z-10 absolute left-[40px] lg:left-[50px] xl:left-[31px] 2xl:left-[139px] top-[141px]  w-[90%] xl:w-[95%] 2xl:w-[82%] pt-[30px] xl:pt-[42px] px-[30px] xl:px-[86px] animate-fade-in flex justify-between' onMouseEnter={() => handleMouseEnter(2)}
                                         onMouseLeave={() => handleMouseLeave()}>
@@ -108,7 +110,7 @@ const MenuBar = () => {
                             </span>
                             {activeDropdown === 3 && (
                                 <>
-                                    <div className='absolute bg-white top-[85px] lg:top-[90px] xl:top-[105px] left-[39px] lg:left-[50px] xl:left-[31px] 2xl:left-[138px] shadow-bottom-only rounded-b-[50px] w-[90%] xl:w-[95%] 2xl:w-[82%] h-[280px] lg:h-[327px] xl:h-[375px] z-10 pb-[30px]' onMouseEnter={() => handleMouseEnter(3)}
+                                    <div className='absolute bg-white top-[93px] lg:top-[97px] xl:top-[112px] left-[39px] lg:left-[50px] xl:left-[31px] 2xl:left-[138px] shadow-bottom-only rounded-b-[50px] w-[90%] xl:w-[95%] 2xl:w-[82%] h-[280px] lg:h-[327px] xl:h-[375px] z-10 pb-[30px]' onMouseEnter={() => handleMouseEnter(3)}
                                         onMouseLeave={() => handleMouseLeave()}></div>
                                     <div className='z-10 absolute left-[40px] lg:left-[50px] xl:left-[31px] 2xl:left-[139px] top-[141px] justify-between flex py-[20px] lg:py-[30px] xl:py-[40px] px-[25px] lg:px-[40px] xl:px-[60px] w-[90%] xl:w-[95%] 2xl:w-[82%] animate-fade-in' onMouseEnter={() => handleMouseEnter(3)}
                                         onMouseLeave={() => handleMouseLeave()}>
@@ -135,7 +137,7 @@ const MenuBar = () => {
                             </span>
                             {activeDropdown === 4 && (
                                 <>
-                                    <div className='absolute bg-white top-[85px] lg:top-[90px] xl:top-[105px] left-[39px] lg:left-[50px] xl:left-[31px] 2xl:left-[138px] shadow-bottom-only rounded-b-[50px] w-[90%] xl:w-[95%] 2xl:w-[82%] h-[300px] lg:h-[364px] xl:h-[416px] z-10 pb-[30px]' onMouseEnter={() => handleMouseEnter(4)}
+                                    <div className='absolute bg-white top-[93px] lg:top-[97px] xl:top-[112px] left-[39px] lg:left-[50px] xl:left-[31px] 2xl:left-[138px] shadow-bottom-only rounded-b-[50px] w-[90%] xl:w-[95%] 2xl:w-[82%] h-[300px] lg:h-[364px] xl:h-[416px] z-10 pb-[30px]' onMouseEnter={() => handleMouseEnter(4)}
                                         onMouseLeave={() => handleMouseLeave()}></div>
                                     <div className='z-10 absolute left-[40px] lg:left-[50px] xl:left-[31px] 2xl:left-[139px] top-[141px] justify-between flex py-[30px] lg:py-[50px] xl:py-[70px] px-[60px] lg:px-[100px] xl:px-[180px]  w-[90%] xl:w-[95%] 2xl:w-[82%] animate-fade-in' onMouseEnter={() => handleMouseEnter(4)}
                                         onMouseLeave={() => handleMouseLeave()}>
@@ -162,7 +164,7 @@ const MenuBar = () => {
             </div>
             <div className='block sm:hidden'>
                 <div className='px-[16px] py-[24px] bg-white flex justify-between'>
-                    <a href="#"><img alt="" className="inline w-[147px] pt-[5px]" src="/virgocx_logo.svg" /></a>
+                    <a href="#"><img alt="" className="inline w-[150px] pt-[9px]" src="/sX.jpg" /></a>
                     <div className='inline-block pt-[8px] text-[18px] Matter text-[#919191]'>
                         <img alt="" src="/ca.png" className="inline w-[24px] h-[24px] mr-[10px]" /><span className="text-black MatterBold">EN</span>/<span className="false">中</span>/<span className="false">FR</span>
                     </div>
@@ -188,7 +190,7 @@ const MenuBar = () => {
                                 <a className="block align-middle mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="/crt-token"><img alt="" className="mr-[21px] w-[17px] inline" src="/security.png" /><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>CRT Token</font></font></a>
                                 <a className="block align-middle mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="#"><img alt="" className="mr-[21px] w-[17px] inline" src="/fees.png" /><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>Rate Standard</font></font></a>
                                 <a className="block align-middle mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="#"><img alt="" className="mr-[21px] w-[17px] inline" src="/api.png" /><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>API</font></font></a>
-                                <a className="text-[#616161] font-semibold mb-[26px] inline-block text-[18px]  w-full Header_drop_down_a__QcFb6" href="#"><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>wealth</font></font><img alt="" className="inline w-[125px] float-right" src="/VirgoOTC_logo_full.png" /></a>
+                                <a className="text-[#616161] font-semibold mb-[26px] inline-block text-[18px]  w-full Header_drop_down_a__QcFb6" href="#"><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>wealth</font></font></a>
                             </div>
                         </Panel>
                         <Panel header="Top Traders" key="2">

@@ -45,7 +45,7 @@ const CoinTabs = () => {
     return (
         <div className='bg-white rounded-t-[40px] sm:h-[226px]'>
             <div className='container mx-auto h-[100%] pb-[25px]'>
-                <div className='lg:mx-[4%] xl:mx-0 2xl:mx-[9%] h-[100%] flex items-end justify-center'>
+                <div className='max-sm:pt-[30px] lg:mx-[4%] xl:mx-0 2xl:mx-[9%] h-[100%] flex items-end justify-center'>
                     <ConfigProvider
                         theme={{
                             components: {

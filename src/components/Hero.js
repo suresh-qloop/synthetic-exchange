@@ -3,15 +3,15 @@ import { Carousel } from 'antd'
 
 const Hero = () => {
   return (
-    <div className='bg-[#F7F5FF] xl:w-full px-[40px] xl:px-0'>
+    <div className='bg-[#F2F2F2] xl:w-full px-[40px] xl:px-0'>
       <div className='flex flex-col justify-center items-center Matter container mx-auto pb-[20px] sm:pb-[100px] pt-[60px] sm:pt-0 sm:pr-[50px] xl:pl-[90px] xl:pr-[90px]'>
-        <div className='flex flex-col items-center sm:flex-row sm:justify-between lg:mx-[4%] xl:mx-0 2xl:mx-[9%]'>
+        <div className='flex flex-col items-center sm:flex-row sm:justify-between lg:mx-[4%] xl:mx-0 2xl:mx-[9%] sm:gap-[20px] xl:gap-[100px]'>
             <div>
                 <div className='flex flex-col' style={{transform: "translate(0px, 0px)", opacity: "1"}}>
-                    <div className='text-[30px] lg:text-[45px] font-bold sm:text-left text-center'>
-                        Power&#39;d by <span className="text-[30px] lg:text-[45px] font-bold bg-gradient-to-r from-green-500 via-orange-500 to-red-500 bg-clip-text text-transparent">CRT</span> Token <span className="text-[30px] lg:text-[45px] font-normal text-[#6b47ed]">Qtum</span> DeFi.
+                    <div className='text-[30px] lg:text-[45px] font-bold sm:text-left text-center Ubuntu-bold'>
+                        Power&#39;d by <span className="text-[30px] lg:text-[45px] font-bold bg-gradient-to-r from-green-500 via-orange-500 to-red-500 bg-clip-text text-transparent Ubuntu-bold">CRT</span> Token <br /><span className="text-[30px] lg:text-[45px] font-bold text-[#4473B9] Ubuntu-bold">Qtum</span> DeFi.
                     </div>
-                    <a href="#" className=" !text-white w-[160px] lg:w-[218px] mt-[30px] lg:mt-[40px]"><div className="hidden sm:flex cursor-pointer bg-[#6B47ED] rounded-full w-[160px] lg:w-[218px] py-3 lg:py-4 justify-center font-semibold text-[14px] lg:text-[18px]" style={{transform: "none"}}>Download App</div></a>
+                    <a href="#" className="w-[160px] lg:w-[218px] mt-[30px] lg:mt-[40px]"><div className="hidden sm:flex cursor-pointer bg-[#FFE184] rounded-full w-[160px] lg:w-[218px] py-3 lg:py-4 justify-center font-semibold text-[14px] lg:text-[20px]" style={{transform: "none"}}>Download App</div></a>
                 </div>
             </div>
             {/* carousel */}
@@ -72,7 +72,7 @@ const Hero = () => {
             </div>
             {/* button */}
             <div className='block sm:hidden'>
-                <a href="#" className="bg-[#6B47ED] flex sm:hidden mt-[46px] cursor-pointer rounded-full w-[218px] py-4 justify-center text-[18px] font-semibold !text-white">Download App</a>
+                <a href="#" className="bg-[#FFE184] flex sm:hidden mt-[46px] cursor-pointer rounded-full w-[218px] py-4 justify-center text-[20px] font-semibold">Download App</a>
             </div>
         </div>
       </div>

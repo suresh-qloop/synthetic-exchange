@@ -21,8 +21,18 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  src: url('/fonts/Ubuntu-B.ttf') format('truetype');
+}
+
 * {
   font-family: "Nunito", sans-serif;
+}
+
+.Ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
 }
 
 .text-header-2 {
@@ -233,12 +243,12 @@
   width: 10px !important;
   height: 10px !important;
   border-radius: 50% !important;
-  background: #d4ccf7 !important;
+  background: #f9e5a8 !important;
   opacity: 1 !important;
 }
 
 .gallery .slick-active button {
-  background-color: #6B47ED !important;
+  background-color: #ED7D31 !important;
 }
 
 .ant-carousel .slick-dots li .slick-active button {
@@ -267,12 +277,12 @@
   width: 10px !important;
   height: 10px !important;
   border-radius: 50% !important;
-  background: #d4ccf7 !important;
+  background: #f9e5a8 !important;
   opacity: 1 !important;
 }
 
 .gallery_m .slick-active button {
-  background: #6b47ed !important;
+  background: #ED7D31 !important;
 }
 
 .shadow-virgo {
