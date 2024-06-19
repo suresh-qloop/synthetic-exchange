@@ -50,7 +50,7 @@ const MenuBar = () => {
                                     <div className='absolute bg-white top-[93px] lg:top-[97px] xl:top-[112px] left-[39px] lg:left-[50px] xl:left-[31px] 2xl:left-[138px] shadow-bottom-only rounded-b-[50px] w-[90%] xl:w-[95%] 2xl:w-[82%] h-[310px] lg:h-[378px] xl:h-[464px] z-10 pb-[30px]' onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={() => handleMouseLeave()}></div>
                                     <div className='z-10 absolute left-[40px] lg:left-[50px] xl:left-[31px] 2xl:left-[139px] top-[141px] w-[90%] xl:w-[95%] 2xl:w-[82%] pt-[25px] lg:pt-[42px] px-[30px] xl:px-[86px] animate-fade-in flex justify-between' onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={() => handleMouseLeave()}>
                                         <div className='w-[60%] xl:w-[50%]'>
-                                            <h6 className="mb-[35px] lg:mb-[48px] font-bold text-[18px] lg:text-[20px] text-[#616161] NunitoBold">Crypto Trading</h6>
+                                            <h6 className="mb-[35px] lg:mb-[48px] font-bold text-[18px] lg:text-[20px] text-[#616161] nunitoBold">Crypto Trading</h6>
                                             <div>
                                                 <div className='inline-block w-[210px]'>
                                                     <a className="my-[40px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6 font-medium hover:text-black hover:underline" href="/market"><img alt="market" className="mr-[12px] w-[40px] inline" src="/market.png" />Market</a>

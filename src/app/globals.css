@@ -31,7 +31,7 @@
   font-family: "Nunito", sans-serif;
 }
 
-.Ubuntu-bold {
+.ubuntu-bold {
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -40,7 +40,7 @@
   color: rgb(52 52 52 / var(--tw-text-opacity));
 }
 
-.NunitoBold {
+.nunitoBold {
   font-family: "Nunito", sans-serif;
 }
 
@@ -354,20 +354,13 @@ footer .ant-collapse-content-box {
 
 .right-full-name::after {
   background: url('/after-book.png') no-repeat;
-  background-size: cover;
-  content: "";
-  height: 24px;
-  position: absolute;
-  right: -32px;
-  top: 4px;
-  width: 24px;
 }
 
 .price-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 16px;
+  /* margin-left: 16px; */
 }
 
 .ant-select {
@@ -387,20 +380,18 @@ footer .ant-collapse-content-box {
   align-items: center;
 }
 
-.ant-select:after {
-  background-color: #979797;
-  bottom: -10px;
-  content: "";
-  height: 1px;
-  left: 0;
-  position: absolute;
-  width: 100%;
-}
-
 .ant-select .ant-select-selector {
   height: 42px !important;
   padding: 0 !important;
-  width: 109px !important;
+}
+
+.ant-select-item-option-content {
+  display: flex;
+  align-items: center;
+}
+
+.ant-select-item-option-content > span {
+  font-size: 14px;
 }
 
 .ant-select-single.ant-select-show-arrow .ant-select-selection-search {
@@ -422,30 +413,15 @@ footer .ant-collapse-content-box {
   padding-right: 0;
 }
 
-.market-body:before {
-  background-color: #f5f5f5;
-  content: "";
-  height: 100%;
-  left: 424px;
-  position: absolute;
-  width: 1px;
-}
-
-.market-body .ant-input-affix-wrapper {
-  align-items: center;
-  background-color: #f5f5f5;
-  border-radius: 4px;
-  display: flex;
-  height: 40px;
-  margin-top: 24px;
-  padding-left: 18px;
-  width: 381px;
-}
-
 .market-body .ant-input-prefix {
   margin-right: 16px;
 }
 
 .market-body .ant-input-suffix {
   margin-left: 4px;
+}
+
+/* li active */
+.li-active{
+  background: linear-gradient(270deg, #f7f5ff 2.47%, rgba(247, 245, 255, 0) 116.71%);
 }

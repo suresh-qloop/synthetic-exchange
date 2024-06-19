@@ -8,8 +8,8 @@ const Hero = () => {
         <div className='flex flex-col items-center sm:flex-row sm:justify-between lg:mx-[4%] xl:mx-0 2xl:mx-[9%] sm:gap-[20px] xl:gap-[100px]'>
             <div>
                 <div className='flex flex-col' style={{transform: "translate(0px, 0px)", opacity: "1"}}>
-                    <div className='text-[30px] lg:text-[45px] font-bold sm:text-left text-center Ubuntu-bold'>
-                        Power&#39;d by <span className="text-[30px] lg:text-[45px] font-bold bg-gradient-to-r from-green-500 via-orange-500 to-red-500 bg-clip-text text-transparent Ubuntu-bold">CRT</span> Token <br /><span className="text-[30px] lg:text-[45px] font-bold text-[#4473B9] Ubuntu-bold">Qtum</span> DeFi.
+                    <div className='text-[30px] lg:text-[45px] font-bold sm:text-left text-center ubuntu-bold'>
+                        Power&#39;d by <span className="text-[30px] lg:text-[45px] font-bold bg-gradient-to-r from-green-500 via-orange-500 to-red-500 bg-clip-text text-transparent ubuntu-bold">$CRT</span> Token <br /><span className="text-[30px] lg:text-[45px] font-bold text-[#4473B9] ubuntu-bold">#Qtum</span> DeFi.
                     </div>
                     <a href="#" className="w-[160px] lg:w-[218px] mt-[30px] lg:mt-[40px]"><div className="hidden sm:flex cursor-pointer bg-[#FFE184] rounded-full w-[160px] lg:w-[218px] py-3 lg:py-4 justify-center font-semibold text-[14px] lg:text-[20px]" style={{transform: "none"}}>Download App</div></a>
                 </div>

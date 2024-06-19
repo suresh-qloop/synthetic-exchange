@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import Market from '@/components/Market'
 import MenuBar from '@/components/MenuBar'
 import TopNavbar from '@/components/TopNavbar'
@@ -9,6 +10,7 @@ const page = () => {
         <TopNavbar />
         <MenuBar />
         <Market />
+        <Footer />
     </div>
   )
 }
