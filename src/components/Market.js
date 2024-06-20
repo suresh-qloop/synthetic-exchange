@@ -1,12 +1,13 @@
 'use client'
 import { Input, Select } from 'antd'
-import { CloseCircleOutlined } from '@ant-design/icons'
 import Link from 'next/link'
 import React, { useEffect, useRef, useState } from 'react'
 
 const Market = () => {
     const [data, setData] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0);
+    const [searchInput, setSearchInput] = useState("");
+    const [filteredData, setFilteredData] = useState(data)
     const container = useRef(null);
     const scriptLoaded = useRef(false);
 
@@ -41,6 +42,16 @@ const Market = () => {
             clearInterval(intervalId)
         }
     }, [])
+
+    useEffect(() => {
+        if (data) {
+            if (searchInput?.trim() === "") {
+                setFilteredData(data)
+            } else {
+                setFilteredData(data.filter(item => item.name.toLowerCase().includes(searchInput?.toLowerCase()) || item.symbol.toLowerCase().includes(searchInput?.toLowerCase())))
+            }
+        }
+    }, [searchInput, data])
   
     useEffect(() => {
       // Check if script is already loaded
@@ -67,7 +78,7 @@ const Market = () => {
             scriptLoaded.current = true;
         }
 
-    }, [activeIndex]);
+    }, []);
 
     const customOptions = [
         {
@@ -88,7 +99,7 @@ const Market = () => {
             label: (
                 <>
                     <img
-                        src="ca.png"
+                        src="usd.png"
                         alt="USD"
                         className='w-[20px] sm:w-[14px] lg:w-[16px] xl:w-[20px] h-[20px] sm:h-[14px] lg:h-[16px] xl:h-[20px] mr-[8px] sm:mr-[6px] xl:mr-[8px]'
                     />
@@ -101,7 +112,7 @@ const Market = () => {
             label:(
                 <>
                     <img
-                        src="ca.png"
+                        src="usdc.png"
                         alt="USDC"
                         className='w-[20px] sm:w-[14px] lg:w-[16px] xl:w-[20px] h-[20px] sm:h-[14px] lg:h-[16px] xl:h-[20px] mr-[8px] sm:mr-[6px] xl:mr-[8px]'
                     />
@@ -117,13 +128,13 @@ const Market = () => {
 
   return (
     <div className='bg-[#F2F2F2]'>
-      <div className='container mx-auto'>
+      <div className='container mx-auto max-sm:pt-[10px]'>
         <div className='flex flex-col bg-white mx-[5%] lg:mx-[4%] xl:mx-0 2xl:mx-[9%]'>
         {/* header */}
             <div className='border-b border-[#f5f5f5] py-[18px] lg:py-[20px] xl:py-[24px] px-[15px] xl:px-[22px]'>
                 <div className='flex flex-col items-center justify-between sm:flex-row'>
                     <div className='flex items-center max-sm:flex-wrap'>
-                        <div className='max-sm:w-[100%] max-sm:justify-center flex items-center pr-[15px] xl:pr-[24px] sm:border-e sm:border-[#eaeaea]'>
+                        <div className='max-sm:w-[100%] max-sm:justify-start flex items-center pr-[15px] xl:pr-[24px] sm:border-e sm:border-[#eaeaea]'>
                             <img src={data && data[activeIndex].image} alt="i-logo" className='h-[52px] sm:h-[32px] lg:h-[42px] xl:h-[52px] w-[52px] sm:w-[32px] lg:w-[42px] xl:w-[52px] mr-[12px] sm:mr-[5px] lg:mr-[12px] rounded-full' />
                             <div>
                                 <Link href="#" className='font-semibold text-black cursor-pointer nunitoBold text-[24px] sm:text-[18px] lg:text-[22px] xl:text-[24px] mr-[32px] sm:mr-[28px] lg:mr-[32px] leading-[33px] sm:leading-[25px] lg:leading-[30px] xl:leading-[33px] relative right-full-name after:bg-cover after:h-[24px] sm:after:h-[18px] lg:after:h-[24px] after:w-[24px] sm:after:w-[18px] lg:after:w-[24px] after:top-[4px] after:right-[-32px] sm:after:right-[-22px] lg:after:right-[-32px] after:absolute'>{data && data[activeIndex].name}</Link>
@@ -135,27 +146,19 @@ const Market = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='max-sm:w-[100%] flex max-sm:justify-between items-center px-[10px] lg:px-[15px] xl:px-[24px]'>
+                        <div className='max-sm:w-[100%] flex max-sm:justify-between max-sm:mt-[10px] items-center px-[10px] lg:px-[15px] xl:px-[24px]'>
                             <div className='text-[#fc5454] nunitoBold text-[28px] sm:text-[20px] lg:text-[24px] xl:text-[28px] leading-[38px] sm:leading-[34px] xl:leading-[38px] mr-0 sm:mr-[6px] xl:mr-[8px]'>${data && data[activeIndex].current_price}</div>
-                            <div className='text-[#fc5454] nunitoBold font-semibold text-[16px] sm:text-[12px] lg:text-[14px] xl:text-[16px] leading-[22px] sm:leading-[19px] xl:leading-[22px] max-sm:text-end'>
+                            <div className={`${data && data[activeIndex].price_change_percentage_24h < 0 ? "text-[#fc5454]" : "text-[#36cc66]" } nunitoBold font-semibold text-[16px] sm:text-[12px] lg:text-[14px] xl:text-[16px] leading-[22px] sm:leading-[19px] xl:leading-[22px] max-sm:text-end`}>
                             <span className='text-[#616161] text-[16px] nunitoBold font-semibold block sm:hidden'>24h Change </span>
-                            {data && data[activeIndex].price_change_percentage_24h.toFixed(2)}%
+                            {data && (data[activeIndex].price_change_percentage_24h < 0 ? data[activeIndex].price_change_percentage_24h.toFixed(2) : "+" + data[activeIndex].price_change_percentage_24h.toFixed(2))}%
                             </div>
                         </div>
-                        <div className='max-sm:w-[100%] flex items-center'>
-                            <div className='max-sm:w-[25%] price-box !ml-0 max-sm:text-center'>
-                                <h6 className='text-[#979797] text-[14px] sm:text-[12px] xl:text-[14px] leading-[19px] sm:leading-[15px] xl:leading-[19px]'>Buy Price</h6>
-                                <span className='text-[#36cc66] font-semibold text-[14px] sm:text-[12px] xl:text-[14px] mt-[4px] sm:mt-[1px] lg:mt-[3px] xl:mt-[4px] leading-[19px] sm:leading-[15px] xl:leading-[19px]'>91,688.91</span>
-                            </div>
-                            <div className='max-sm:w-[25%] price-box ml-0 sm:ml-[10px] lg:ml-[16px] max-sm:text-center'>
-                                <h6 className='text-[#979797] text-[14px] sm:text-[12px] xl:text-[14px] leading-[19px] sm:leading-[15px] xl:leading-[19px]'>Sell Price</h6>
-                                <span className='text-[#fc5454] font-semibold text-[14px] sm:text-[12px] xl:text-[14px] mt-[4px] sm:mt-[3px] xl:mt-[4px] leading-[19px] sm:leading-[15px] xl:leading-[19px]'>88,812.84</span>
-                            </div>
-                            <div className='max-sm:w-[25%] price-box ml-0 sm:ml-[10px] lg:ml-[16px] max-sm:text-center'>
+                        <div className='max-sm:w-[100%] max-sm:mt-[10px] max-sm:justify-end max-sm:gap-5 flex items-center'>
+                            <div className='price-box ml-0 sm:ml-[10px] lg:ml-[16px] max-sm:text-center'>
                                 <h6 className='text-[#979797] text-[14px] sm:text-[12px] xl:text-[14px] leading-[19px] sm:leading-[15px] xl:leading-[19px]'>24h Low</h6>
                                 <span className='font-semibold text-[14px] sm:text-[12px] xl:text-[14px] mt-[4px] sm:mt-[3px] xl:mt-[4px] leading-[19px] sm:leading-[15px] xl:leading-[19px]'>{data && data[activeIndex].low_24h}</span>
                             </div>
-                            <div className='max-sm:w-[25%] price-box ml-0 sm:ml-[10px] lg:ml-[16px] max-sm:text-center'>
+                            <div className='price-box ml-0 sm:ml-[10px] lg:ml-[16px] max-sm:text-center'>
                                 <h6 className='text-[#979797] text-[14px] sm:text-[12px] xl:text-[14px] leading-[19px] sm:leading-[15px] xl:leading-[19px]'>24h High</h6>
                                 <span className='font-semibold text-[14px] sm:text-[12px] xl:text-[14px] mt-[4px] sm:mt-[3px] xl:mt-[4px] leading-[19px] sm:leading-[15px] xl:leading-[19px]'>{data && data[activeIndex].high_24h}</span>
                             </div>
@@ -163,10 +166,10 @@ const Market = () => {
                     </div>
                     <div className='max-sm:w-full'>
                         <Select
-                        bordered={false}
+                        variant='borderless'
                         suffixIcon=<img src='/arrow_down_purple.svg' className='w-[15px] sm:w-[10px] lg:w-[15px] h-[9px] sm:h-[5px] lg:h-[6px] xl:h-[9px]' />
                         defaultValue={customOptions[0].value}
-                        className='max-sm:mt-[20px] custom-select w-full sm:w-[85px] lg:w-[95px] xl:w-[109px] after:bg-[#979797] after:bottom-[-6px] xl:after:bottom-[-10px] after:h-[1px] after:left-0 after:absolute after:w-full sm:after:w-[92%]'
+                        className='max-sm:mt-[20px] custom-select w-full sm:w-[85px] lg:w-[95px] xl:w-[125px] after:bg-[#979797] after:bottom-[-6px] xl:after:bottom-[-10px] after:h-[1px] after:left-0 after:absolute after:w-full sm:after:w-[92%]'
                         options={customOptions}
                         />
                     </div>
@@ -176,7 +179,7 @@ const Market = () => {
             <div className='relative flex flex-1 max-sm:flex-wrap market-body'>
                 <div className='w-[100%] sm:w-[35%] border-e border-[#f5f5f5]'>
                     <div className='flex flex-col items-center'>
-                        <Input bordered={false} className='flex items-center bg-[#f5f5f5] rounded-[4px] h-[36px] xl:h-[40px] mt-[12px] lg:mt-[24px] pl-[18px] w-[92%] sm:w-[94%] xl:w-[92%]' placeholder='Search cryptocurrency' prefix={<img src='/search-icon.png' alt='search' className=' h-[17.5px] w-[17.5px]' />} suffix={<CloseCircleOutlined style={{ height: "15px", width: "15px", color: "#00000040"}} />} />
+                        <Input variant='borderless' allowClear className='flex items-center bg-[#f5f5f5] rounded-[4px] h-[36px] xl:h-[40px] mt-[12px] lg:mt-[24px] pl-[18px] w-[92%] sm:w-[94%] xl:w-[92%]' placeholder='Search cryptocurrency' prefix={<img src='/search-icon.png' alt='search' className=' h-[17.5px] w-[17.5px]' />} onChange={(e) => setSearchInput(e.target.value)} />
                     </div>
                     <div className='flex items-center mx-[22px] sm:mx-[10px] lg:mx-[15px] xl:mx-[22px] mt-[12px] sm:mt-[8px] lg:mt-[12px] mb-[8px] sm:mb-[6px] lg:mb-[8px]'>
                         <div className='text-[#979797] text-[14px] sm:text-[12px] lg:text-[14px] w-[140px] sm:w-[90px] lg:w-[125px] xl:w-[140px]'>Crypto</div>
@@ -190,7 +193,7 @@ const Market = () => {
                         </div>
                     </div>
                     <ul className='relative h-[332px] lg:h-[438px] overflow-y-scroll xl:h-[485px] xl:overflow-y-hidden'>
-                        {data?.map((item, index) => (
+                        {filteredData?.map((item, index) => (
                             <li key={index} className={`flex items-center cursor-pointer py-[12px] sm:py-[8px] lg:py-[12px] px-[22px] sm:px-[8px] lg:px-[15px] xl:px-[22px] ${activeIndex === index ? "li-active" : ""}`} onClick={() => handleClick(index)}>
                             <div className='flex items-center w-[140px] sm:w-[97px] lg:w-[125px] xl:w-[140px]'>
                                 <img src={item.image} alt="i-l-logo" className='h-[32px] sm:h-[26px] lg:h-[32px] w-[32px] sm:w-[26px] lg:w-[32px] mr-[12px] sm:mr-[6px] lg:mr-[12px] rounded-full' />
@@ -201,14 +204,14 @@ const Market = () => {
                             </div>
                             <div className='text-[#343434] flex-1 text-[14px] sm:text-[12px] lg:text-[14px] text-center leading-[20px]'>${item.current_price}</div>
                             <div className='flex-1 text-right'>
-                                <div className={`${item.price_change_percentage_24h < 0 ? "text-[#fc5454]" : "text-[#36cc66]"} text-[14px] sm:text-[12px] lg:text-[14px] leading-[20px] sm:leading-[16px] lg:leading-[20px]`}>{item.price_change_percentage_24h.toFixed(2)}%</div>
+                                <div className={`${item.price_change_percentage_24h < 0 ? "text-[#fc5454]" : "text-[#36cc66]"} text-[14px] sm:text-[12px] lg:text-[14px] leading-[20px] sm:leading-[16px] lg:leading-[20px]`}>{item.price_change_percentage_24h < 0 ? item.price_change_percentage_24h.toFixed(2) : "+" + item.price_change_percentage_24h.toFixed(2)}%</div>
                             </div>
                         </li>
                         ))}
                     </ul>
                 </div>
                 <div className='w-[100%] sm:w-[65%] p-[10px] lg:p-[20px] max-sm:mt-[10px]'>
-                    <div className="tradingview-widget-container !w-[100%] !h-[400px] lg:!h-[520px] xl:!h-[570px]" ref={container}>
+                    <div className={`tradingview-widget-container !w-[100%] !h-[400px] lg:!h-[520px] xl:!h-[570px] ${(activeIndex === 0 || activeIndex === 1) ? "" : "hidden"}`} ref={container}>
                         <div className="tradingview-widget-container__widget" style={{ height: "100%", width: "100%"}}></div>
                     </div>
                 </div>

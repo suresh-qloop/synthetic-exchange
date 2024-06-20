@@ -337,9 +337,9 @@ footer .ant-collapse-content-box {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 10px; /* Adjust height to control the shadow's vertical extent */
+  height: 10px; 
   box-shadow: 0px 10px 25px 4px rgba(234, 234, 234, 0.8);
-  z-index: -1; /* Ensure the shadow stays behind the element */
+  z-index: -1;
 }
 
 .right-full-name::before {
@@ -360,7 +360,6 @@ footer .ant-collapse-content-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* margin-left: 16px; */
 }
 
 .ant-select {
@@ -424,4 +423,73 @@ footer .ant-collapse-content-box {
 /* li active */
 .li-active{
   background: linear-gradient(270deg, #f7f5ff 2.47%, rgba(247, 245, 255, 0) 116.71%);
+}
+
+/* background animation */
+.flashlight-text-large {
+  background-size: auto 65% !important;
+}
+
+.flashlight-text-large,
+.absolute-text {
+  text-align: center;
+}
+
+.flashlight-text {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: url("/title_back.svg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation: bg-position-animation 8s ease-in-out infinite alternate;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+@keyframes bg-position-animation {
+  0% {
+    background-position: left 0 top 50%;
+  }
+  12.5% {
+    background-position: left 20% top 30%;
+  }
+  25% {
+    background-position: left -10% top 40%;
+  }
+  37.5% {
+    background-position: left 20% top 60%;
+  }
+  50% {
+    background-position: left 50% top 40%;
+  }
+  62.5% {
+    background-position: left 80% top 10%;
+  }
+  75% {
+    background-position: left 55% top 20%;
+  }
+  82.5% {
+    background-position: left 90% top 0;
+  }
+  95% {
+    background-position: left 40% top 25%;
+  }
+  100% {
+    background-position: left 0 top 50%;
+  }
+}
+
+.absolute-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+  width: 100%;
+  height: 110%;
+  z-index: 0;
 }
