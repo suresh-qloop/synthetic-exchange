@@ -6,7 +6,7 @@ const TopNavbar = () => {
     return (
         <div className='sm:fixed z-50 sm:top-0 sm:left-0 sm:right-0 sm:z-[100] bg-white !border-none !border-0'>
             <div className='flex items-center px-4 py-2 sm:px-12'>
-                <img src="/final-logo.png" alt="" className='pr-1 w-9'/>
+                <img src="/final-logo.png" alt="logo" className='pr-1 w-9'/>
                 <p className='hidden text-lg font-semibold sm:block text-header-2 sm:pr-4 nunitoBold'>Trending</p>
                 <div className='flex flex-wrap overflow-x-auto h-7'></div>
                 <Marquee pauseOnHover pauseOnClick>

@@ -70,7 +70,7 @@ const MenuBar = () => {
                                         </div>
                                         <div className='w-[40%] xl:w-[50%]'>
                                             <a className="text-[#616161] inline-block font-bold text-[20px] lg:text-[24px] MatterBold Header_drop_down_a__QcFb6 font-medium hover:text-black hover:underline" href="#">Wealth
-                                            <img alt="" className="mt-[25px] lg:mt-[10px] w-full" src="/OTC.png" />
+                                                <img alt="" className="mt-[25px] lg:mt-[10px] w-full" src="/OTC.png" />
                                             </a>
                                         </div>
                                     </div>

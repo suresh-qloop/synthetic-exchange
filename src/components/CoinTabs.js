@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import React, { useEffect, useState } from 'react'
 import { Tabs, ConfigProvider } from 'antd'
@@ -9,7 +10,6 @@ const CoinTabs = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-
             try {
                 const response = await fetch('/api/cryptoprices', {
                     method: 'GET',
@@ -29,13 +29,12 @@ const CoinTabs = () => {
             }
         }
         fetchData();
-
     }, [])
 
     const TabLabel = ({ image, symbol, id }) => {
         return (
             <div className='w-full flex flex-col items-center mr-[28px] lg:mr-[60px] pb-[20px] lg:pb-[28px] relative'>
-                <img src={image} alt="" className='rounded-full w-7 h-7' />
+                <img src={image} alt="coin" className='rounded-full w-7 h-7' />
                 {activeKey === id && <img src="/coinBack.svg" alt="spin" className='absolute animate-spin w-[40px] top-[-6px] !opacity-100' />}
                 <span className={`uppercase text-[20px] leading-[28px] mt-[9px] !font-medium ${activeKey === id ? "text-black" : "text-[#616161]"}`}>{symbol}</span>
             </div>

@@ -1,7 +1,7 @@
 'use client'
 import { Input, Select } from 'antd'
 import Link from 'next/link'
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import CoinChart from './CoinChart'
 
 const Market = () => {
@@ -166,7 +166,7 @@ const Market = () => {
                                 <Input variant='borderless' allowClear className='flex items-center bg-[#f5f5f5] rounded-[4px] h-[36px] xl:h-[40px] mt-[12px] lg:mt-[24px] pl-[18px] w-[92%] sm:w-[94%] xl:w-[92%]' placeholder='Search cryptocurrency' prefix={<img src='/search-icon.png' alt='search' className=' h-[17.5px] w-[17.5px]' />} onChange={(e) => setSearchInput(e.target.value)} />
                             </div>
                             <div className='flex items-center mx-[22px] sm:mx-[10px] lg:mx-[15px] xl:mx-[22px] mt-[12px] sm:mt-[8px] lg:mt-[12px] mb-[8px] sm:mb-[6px] lg:mb-[8px]'>
-                                <div className='text-[#979797] text-[14px] sm:text-[12px] lg:text-[14px] w-[140px] sm:w-[90px] lg:w-[125px] xl:w-[140px]'>Crypto</div>
+                                <div className='text-[#979797] text-[14px] sm:text-[12px] lg:text-[14px] w-[133px] sm:w-[90px] lg:w-[125px] xl:w-[140px]'>Crypto</div>
                                 <div className='text-[#979797] text-[14px] sm:text-[12px] lg:text-[14px] flex flex-1 justify-center items-center cursor-pointer'>
                                     <span className='text-[#979797] text-[14px] sm:text-[12px] lg:text-[14px] nunitoBold'>Ref.Price</span>
                                     <img src="/arrowUpDown.png" alt="arrowUpDown" className='h-[10px] sm:h-[8px] lg:h-[10px] w-[6px] sm:w-[4px] lg:w-[6px] ml-[6px] sm:ml-[3px] lg:ml-[6px]' />
@@ -179,7 +179,7 @@ const Market = () => {
                             <ul className='relative h-[332px] lg:h-[438px] overflow-y-scroll xl:h-[485px] xl:overflow-y-hidden'>
                                 {filteredData?.map((item, index) => (
                                     <li key={index} className={`flex items-center cursor-pointer py-[12px] sm:py-[8px] lg:py-[12px] px-[22px] sm:px-[8px] lg:px-[15px] xl:px-[22px] ${activeIndex === index ? "li-active" : ""}`} onClick={() => handleClick(index)}>
-                                        <div className='flex items-center w-[140px] sm:w-[97px] lg:w-[125px] xl:w-[140px]'>
+                                        <div className='flex items-center w-[133px] sm:w-[97px] lg:w-[125px] xl:w-[140px]'>
                                             <img src={item.image} alt="i-l-logo" className='h-[32px] sm:h-[26px] lg:h-[32px] w-[32px] sm:w-[26px] lg:w-[32px] mr-[12px] sm:mr-[6px] lg:mr-[12px] rounded-full' />
                                             <div>
                                                 <div className='flex items-center text-[#343434] nunitoBold font-semibold text-[14px] sm:text-[12px] lg:text-[14px] leading-[19px] sm:leading-[16px] lg:leading-[19px]'>{item.name}</div>
