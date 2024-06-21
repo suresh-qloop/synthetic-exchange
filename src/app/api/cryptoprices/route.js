@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 
 export async function GET() {
+    const url = 'https://pro-api.coingecko.com/api/v3/coins/markets?vs_currency=cad&ids=bitcoin%2Cethereum%2Cbinance-coin-wormhole%2Cnano%2Cqtum%2Csolana%2Cpax-gold&precision=2'
     const options = {
         method: 'GET',
         headers: {
@@ -13,7 +14,7 @@ export async function GET() {
     }
 
     try {
-        const response = await fetch(process.env.NEXT_COINGECKO_API_URL, options);
+        const response = await fetch(url, options);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
