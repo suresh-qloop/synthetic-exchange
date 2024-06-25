@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import { Input, Select } from 'antd'
 import Link from 'next/link'
@@ -24,7 +25,6 @@ const Market = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-
             try {
                 const response = await fetch('/api/cryptoprices', {
                     method: 'GET',
@@ -151,7 +151,7 @@ const Market = () => {
                             <div className='max-sm:w-full'>
                                 <Select
                                     variant='borderless'
-                                    suffixIcon=<img src='/arrow_down_purple.svg' className='w-[15px] sm:w-[10px] lg:w-[15px] h-[9px] sm:h-[5px] lg:h-[6px] xl:h-[9px]' />
+                                    suffixIcon=<img src='/arrow_down_purple.svg' alt='arrowDown' className='w-[15px] sm:w-[10px] lg:w-[15px] h-[9px] sm:h-[5px] lg:h-[6px] xl:h-[9px]' />
                                     defaultValue={customOptions[0].value}
                                     className='max-sm:mt-[20px] custom-select w-full sm:w-[85px] lg:w-[95px] xl:w-[125px] after:bg-[#979797] after:bottom-[-6px] xl:after:bottom-[-10px] after:h-[1px] after:left-0 after:absolute after:w-full sm:after:w-[92%]'
                                     options={customOptions}

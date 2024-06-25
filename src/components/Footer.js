@@ -3,14 +3,11 @@
 import { Collapse } from 'antd';
 import Link from 'next/link'
 import React, { useState } from 'react'
+import { FaMedium } from "react-icons/fa6";
 
 const { Panel } = Collapse;
 
 const Footer = () => {
-
-    const [imageSrcApp, setImageSrcApp] = useState('/appStore.png');
-    const [imageSrcGoogle, setImageSrcGoogle] = useState('/googleStore.png');
-    const [imageSrcApk, setImageSrcApk] = useState('/apk.png');
 
     const expandRotateClass = (isActive) => {
         return `w-[13px] transition-transform duration-300 ${isActive ? 'rotate-180' : ''}`
@@ -115,43 +112,32 @@ const Footer = () => {
                         <Link href="#" className='hidden sm:block sm:!opacity-100 pl-[8px] sm:pl-0 pb-[15px] sm:text-[13px] lg:text-[14px] xl:text-[18px] font-medium text-[#616161]'>Terms of Service</Link>
                     </div>
                 </div>
-                <div className='flex flex-col sm:flex-row justify-between mx-auto mt-[49px] xl:mt-[55px] gap-4 lg:gap-5 xl:gap-0'>
-                    <div className='flex flex-col items-center gap-2 lg:gap-3 sm:flex-row xl:gap-0'>
-                        <Link href="#" onMouseEnter={() => setImageSrcApp('/appStore_hover.png')} onMouseLeave={() => setImageSrcApp('/appStore.png')}>
-                            <img src={imageSrcApp} alt="app" className='w-[192px] h-[53px] sm:w-[120px] lg:w-[170px] xl:w-[192px] sm:h-[32px] lg:h-[40px] xl:h-[53px] mb-[18px] sm:mb-[0px] sm:mr-[24px]' />
-                        </Link>
-                        <Link href="#" onMouseEnter={() => setImageSrcGoogle('/googleStore_hover.png')} onMouseLeave={() => setImageSrcGoogle('/googleStore.png')}>
-                            <img src={imageSrcGoogle} alt="google" className='w-[192px] h-[53px] sm:w-[120px] lg:w-[170px] xl:w-[192px] sm:h-[32px] lg:h-[40px] xl:h-[53px] mb-[18px] sm:mb-[0px] sm:mr-[24px]' />
-                        </Link>
-                        <Link href="#" onMouseEnter={() => setImageSrcApk('/apk_hover.png')} onMouseLeave={() => setImageSrcApk('/apk.png')}>
-                            <img src={imageSrcApk} alt="apk" className='w-[192px] h-[53px] sm:w-[120px] lg:w-[170px] xl:w-[192px] sm:h-[32px] lg:h-[40px] xl:h-[53px] mb-[18px] sm:mb-[0px] sm:mr-[24px]' />
-                        </Link>
-                    </div>
-                    <div className='flex sm:mx-auto mt-[41px] sm:mt-[0px] sm:mr-[8px] items-center justify-between sm:justify-around'>
+                <div className='flex flex-col sm:flex-row justify-center mx-auto mt-[49px] xl:mt-[55px] gap-4 lg:gap-5 xl:gap-0'>
+                    <div className='flex sm:mx-auto sm:mt-[0px] items-center justify-between sm:justify-center'>
                         <Link href="#">
-                            <img src="/twitter.png" alt="twitter" className='w-[30px] h-[30px] sm:w-[20px] lg:w-[27px] sm:h-[20px] lg:h-[27px] xl:w-[35px] xl:h-[35px] cursor-pointer sm:ml-[24px]' />
+                            <img src="/twitter.png" alt="twitter" className='w-[30px] h-[30px] sm:w-[35px] sm:h-[35px] cursor-pointer sm:ml-[24px]' />
                         </Link>
                         <Link href="#">
-                            <img src="/facebook.png" alt="facebook" className='w-[30px] h-[30px] sm:w-[20px] lg:w-[27px] sm:h-[20px] lg:h-[27px] xl:w-[35px] xl:h-[35px] cursor-pointer sm:ml-[24px]' />
+                            <img src="/facebook.png" alt="facebook" className='w-[30px] h-[30px] sm:w-[35px] sm:h-[35px] cursor-pointer sm:ml-[24px]' />
                         </Link>
                         <Link href="#">
-                            <img src="/linkedIn.png" alt="linkedin" className='w-[30px] h-[30px] sm:w-[20px] lg:w-[27px] sm:h-[20px] lg:h-[27px] xl:w-[35px] xl:h-[35px] cursor-pointer sm:ml-[24px]' />
+                            <FaMedium className='w-[30px] h-[30px] sm:w-[35px] sm:h-[35px] cursor-pointer sm:ml-[24px] bg-[#DC9FA5] rounded-full p-1 text-white' />
                         </Link>
                         <Link href="#">
-                            <img src="/instagram.png" alt="instagram" className='w-[30px] h-[30px] sm:w-[20px] lg:w-[27px] sm:h-[20px] lg:h-[27px] xl:w-[35px] xl:h-[35px] cursor-pointer sm:ml-[24px]' />
+                            <img src="/instagram.png" alt="instagram" className='w-[30px] h-[30px] sm:w-[35px] sm:h-[35px] cursor-pointer sm:ml-[24px]' />
                         </Link>
                         <Link href="#">
-                            <img src="/reddit.png" alt="reddit" className='w-[30px] h-[30px] sm:w-[20px] lg:w-[27px] sm:h-[20px] lg:h-[27px] xl:w-[35px] xl:h-[35px] cursor-pointer sm:ml-[24px]' />
+                            <img src="/reddit.png" alt="reddit" className='w-[30px] h-[30px] sm:w-[35px] sm:h-[35px] cursor-pointer sm:ml-[24px]' />
                         </Link>
                         <Link href="#">
-                            <img src="/youtube.png" alt="youtube" className='w-[30px] h-[30px] sm:w-[20px] lg:w-[27px] sm:h-[20px] lg:h-[27px] xl:w-[35px] xl:h-[35px] cursor-pointer sm:ml-[24px]' />
+                            <img src="/youtube.png" alt="youtube" className='w-[30px] h-[30px] sm:w-[35px] sm:h-[35px] cursor-pointer sm:ml-[24px]' />
                         </Link>
                     </div>
                 </div>
                 <div className='h-[1px] bg-[#D8D8D8] mt-[40px] sm:mt-[20px] lg:mt-[28px] xl:mt-[32px] mb-[26px] sm:mb-[20px] lg:mb-[26px]'></div>
                 <div className='flex flex-col justify-center mx-auto lg:pr-[75px]'>
                     <div className='flex items-center lg:mr-[42px] mb-[24px] sm:mb-[0px] justify-center'>
-                        <img src="/ca.png" alt="ca" className='h-[15px] xl:h-[24px] mr-[16px] sm:mr-[14px] lg:mr-[20px]' />
+                        <img src="/qtum.png" alt="Qtum" className='h-[15px] xl:h-[24px] mr-[16px] sm:mr-[14px] lg:mr-[18px]' />
                         <p className='text-[14px] sm:text-[13px] lg:text-[14px] xl:text-[18px] text-[#616161]'>FINTRAC Registered MSB # M19955733 Restricted Dealer registered with CSA</p>
                     </div>
                 </div>

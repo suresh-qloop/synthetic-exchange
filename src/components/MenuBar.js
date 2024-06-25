@@ -53,18 +53,18 @@ const MenuBar = () => {
                                             <h6 className="mb-[35px] lg:mb-[48px] font-bold text-[18px] lg:text-[20px] text-[#616161] nunitoBold">Crypto Trading</h6>
                                             <div>
                                                 <div className='inline-block w-[210px]'>
-                                                    <a className="my-[40px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6 font-medium hover:text-black hover:underline" href="/market"><img alt="market" className="mr-[12px] w-[40px] inline" src="/market.png" />Market</a>
+                                                    <a className="my-[40px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6 font-medium hover:text-black hover:underline" href="/market"><img alt="market" className="mr-[10px] w-[43px] inline" src="/market.png" />Market</a>
                                                 </div>
                                                 <div className='inline-block'>
-                                                    <a className="my-[40px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6 font-medium hover:text-black hover:underline" href="/crt-token"><img alt="security" className="mr-[12px] w-[40px] inline" src="/security.png" />CRT Token</a>
+                                                    <a className="my-[40px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6 font-medium hover:text-black hover:underline" href="/crt-token"><img alt="security" className="mr-[10px] w-[43px] inline" src="/small-crt.png" />CRT Token</a>
                                                 </div>
                                             </div>
                                             <div className='my-[35px] lg:my-[48px]'>
                                                 <div className='inline-block min-w-[210px]'>
-                                                    <a className="my-[48px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6 mr-[15px] font-medium hover:text-black hover:underline" href="#"><img alt="fees" className="mr-[12px] w-[40px] inline" src="/fees.png" />Fees &amp; Funding</a>
+                                                    <a className="my-[48px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6 mr-[15px] font-medium hover:text-black hover:underline" href="#"><img alt="fees" className="mr-[10px] w-[43px] inline" src="/fees.png" />Fees &amp; Funding</a>
                                                 </div>
                                                 <div className='inline-block'>
-                                                    <a className="my-[40px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6 font-medium hover:text-black hover:underline" href="#"><img alt="api" className="mr-[12px] w-[40px] inline" src="/api.png" />API</a>
+                                                    <a className="my-[40px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6 font-medium hover:text-black hover:underline" href="#"><img alt="api" className="mr-[10px] w-[43px] inline" src="/api.png" />API</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -186,10 +186,10 @@ const MenuBar = () => {
                     >
                         <Panel header="Documents" key="1">
                             <div className='bg-[#F7F5FF] px-[16px] py-[12px]'>
-                                <a className="block align-middle mt-[12px] mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="/market"><img alt="" className="mr-[21px] w-[17px] inline" src="/market.png" />Market</a>
-                                <a className="block align-middle mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="/crt-token"><img alt="" className="mr-[21px] w-[17px] inline" src="/security.png" /><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>CRT Token</font></font></a>
-                                <a className="block align-middle mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="#"><img alt="" className="mr-[21px] w-[17px] inline" src="/fees.png" /><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>Rate Standard</font></font></a>
-                                <a className="block align-middle mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="#"><img alt="" className="mr-[21px] w-[17px] inline" src="/api.png" /><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>API</font></font></a>
+                                <a className="block align-middle mt-[12px] mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="/market"><img alt="" className="mr-[18px] w-[26px] inline" src="/market.png" />Market</a>
+                                <a className="block align-middle mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="/crt-token"><img alt="" className="mr-[18px] w-[26px] inline" src="/small-crt.png" /><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>CRT Token</font></font></a>
+                                <a className="block align-middle mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="#"><img alt="" className="mr-[18px] w-[26px] inline" src="/fees.png" /><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>Rate Standard</font></font></a>
+                                <a className="block align-middle mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="#"><img alt="" className="mr-[18px] w-[26px] inline" src="/api.png" /><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>API</font></font></a>
                                 <a className="text-[#616161] font-semibold mb-[26px] inline-block text-[18px]  w-full Header_drop_down_a__QcFb6" href="#"><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>wealth</font></font></a>
                             </div>
                         </Panel>
