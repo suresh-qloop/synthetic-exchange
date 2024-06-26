@@ -88,8 +88,13 @@ const MenuBar = () => {
                                         onMouseLeave={() => handleMouseLeave()}></div>
                                     <div className='z-10 absolute left-[40px] lg:left-[50px] xl:left-[31px] 2xl:left-[139px] top-[141px]  w-[90%] xl:w-[95%] 2xl:w-[82%] pt-[30px] xl:pt-[42px] px-[30px] xl:px-[86px] animate-fade-in flex justify-between' onMouseEnter={() => handleMouseEnter(2)}
                                         onMouseLeave={() => handleMouseLeave()}>
-                                        <div className='w-[55%] lg:w-[60%] flex flex-wrap'>
-                                            <a className="w-[50%] align-middle text-[#616161] font-bold text-[16px] lg:text-[18px] xl:text-[20px] MatterBold Header_drop_down_a__QcFb6 hover:text-black hover:underline" href="#">Cryptoken Board<img alt="cryptoken" className="ml-[10px] w-[40px] inline" src="/cryptoken.png" /></a>
+                                        <div className='w-full'>
+                                        <h6 className="mb-[35px] lg:mb-[48px] font-bold text-[18px] lg:text-[20px] text-[#616161] nunitoBold">Cryptoken Board</h6>
+                                            <div>
+                                                <div className='inline-block'>
+                                                <a className="my-[40px] align-middle text-[#616161] text-[16px] lg:text-[20px] Header_drop_down_a__QcFb6 font-medium hover:text-black hover:underline" href="#"><img alt="cryptoken" className="mr-[10px] w-[43px] inline" src="/cryptoken.png" />Leading Earners</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </>
@@ -124,12 +129,7 @@ const MenuBar = () => {
                                         onMouseLeave={() => handleMouseLeave()}></div>
                                     <div className='z-10 absolute left-[40px] lg:left-[50px] xl:left-[31px] 2xl:left-[139px] top-[141px] justify-between flex py-[30px] lg:py-[50px] xl:py-[70px] px-[60px] lg:px-[100px] xl:px-[180px]  w-[90%] xl:w-[95%] 2xl:w-[82%] animate-fade-in' onMouseEnter={() => handleMouseEnter(4)}
                                         onMouseLeave={() => handleMouseLeave()}>
-                                        <div className=' text-center w-[398px] h-[174px]'>
-                                            <a className="text-[#616161] font-semibold text-[14px] lg:text-[16px] xl:text-[18px] MatterBold block Header_drop_down_a__QcFb6 hover:text-black hover:underline" href="#"><img className="mb-[20px]" src="/giftcard-entyBg.png" alt="learn" />Virgo Gift - Crypto Gift Card</a>
-                                        </div>
-                                        <div className=' text-center mx-[16px] w-[398px] h-[174px]'>
-                                            <a className="text-[#616161] font-semibold text-[14px] lg:text-[16px] xl:text-[18px] MatterBold block Header_drop_down_a__QcFb6 hover:text-black hover:underline" href="#"><img className="mb-[20px]" src="/shopcard-entyBg.png" alt="tier" />Virgo Shop - Retail Gift Card</a>
-                                        </div>
+                                        
                                     </div>
                                 </>
                             )}
@@ -178,7 +178,7 @@ const MenuBar = () => {
                         </Panel>
                         <Panel header="Top Traders" key="2">
                             <div className='bg-[#F7F5FF] px-[16px] py-[12px]'>
-                                <a className="block mb-[24px] align-middle text-[#616161] font-semibold text-[18px]  Header_drop_down_a__QcFb6" href="#">Cryptoken Board<img alt="cryptoken" className="ml-[8px] w-[26px] inline" src="/cryptoken.png" /></a>
+                                <a className="block mb-[24px] align-middle text-[#616161] font-semibold text-[18px]  Header_drop_down_a__QcFb6" href="#"><img alt="cryptoken" className="mr-[10px] w-[26px] inline" src="/cryptoken.png" />Leading Earners</a>
                             </div>
                         </Panel>
                         <Panel header="DEX" key="3">
@@ -187,12 +187,7 @@ const MenuBar = () => {
                             </div>
                         </Panel>
                         <Panel header="Gift Card" key="4">
-                            <div className="py-[8px] px-[16px]">
-                                <a className="text-[#616161] font-semibold text-[18px] block Header_drop_down_a__QcFb6" href="#">Virgo Gift - Crypto Gift Card<img className="w-full mt-[12px]" src="/giftcard-entyBg.png" alt="tier" /></a>
-                            </div>
-                            <div className="py-[8px] px-[16px]">
-                                <a className="text-[#616161] font-semibold text-[18px] block Header_drop_down_a__QcFb6" href="#">Virgo Shop - Retail Gift Card<img className="w-full mt-[12px]" src="/shopcard-entyBg.png" alt="plus" /></a>
-                            </div>
+                            
                         </Panel>
                     </Collapse>
                 </div>
