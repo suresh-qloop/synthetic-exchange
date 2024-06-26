@@ -89,7 +89,7 @@ const MenuBar = () => {
                                     <div className='z-10 absolute left-[40px] lg:left-[50px] xl:left-[31px] 2xl:left-[139px] top-[141px]  w-[90%] xl:w-[95%] 2xl:w-[82%] pt-[30px] xl:pt-[42px] px-[30px] xl:px-[86px] animate-fade-in flex justify-between' onMouseEnter={() => handleMouseEnter(2)}
                                         onMouseLeave={() => handleMouseLeave()}>
                                         <div className='w-[55%] lg:w-[60%] flex flex-wrap'>
-                                            <a className="w-[50%] text-[#616161] font-bold text-[16px] lg:text-[18px] xl:text-[20px] MatterBold Header_drop_down_a__QcFb6 hover:text-black hover:underline" href="#">Cryptoken Board</a>
+                                            <a className="w-[50%] align-middle text-[#616161] font-bold text-[16px] lg:text-[18px] xl:text-[20px] MatterBold Header_drop_down_a__QcFb6 hover:text-black hover:underline" href="#">Cryptoken Board<img alt="cryptoken" className="ml-[10px] w-[40px] inline" src="/cryptoken.png" /></a>
                                         </div>
                                     </div>
                                 </>
@@ -178,7 +178,7 @@ const MenuBar = () => {
                         </Panel>
                         <Panel header="Top Traders" key="2">
                             <div className='bg-[#F7F5FF] px-[16px] py-[12px]'>
-                                <a className="block mb-[24px] text-[#616161] font-semibold text-[18px]  Header_drop_down_a__QcFb6" href="#">Cryptoken Board</a>
+                                <a className="block mb-[24px] align-middle text-[#616161] font-semibold text-[18px]  Header_drop_down_a__QcFb6" href="#">Cryptoken Board<img alt="cryptoken" className="ml-[8px] w-[26px] inline" src="/cryptoken.png" /></a>
                             </div>
                         </Panel>
                         <Panel header="DEX" key="3">

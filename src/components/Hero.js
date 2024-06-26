@@ -9,9 +9,9 @@ const Hero = () => {
             <div>
                 <div className='flex flex-col' style={{transform: "translate(0px, 0px)", opacity: "1"}}>
                     <div className='text-[30px] lg:text-[45px] font-bold sm:text-left text-center ubuntu-bold'>
-                        Power&#39;d by <span className="text-[30px] lg:text-[45px] font-bold bg-gradient-to-r from-green-500 via-orange-500 to-red-500 bg-clip-text text-transparent ubuntu-bold">$CRT</span> Token <br /><span className="text-[30px] lg:text-[45px] font-bold text-[#4473B9] ubuntu-bold">#Qtum</span> DeFi.
+                        Power&#39;d by <span className="text-[30px] lg:text-[45px] font-bold bg-gradient-to-r from-green-500 via-orange-500 to-red-500 bg-clip-text text-transparent ubuntu-bold">$CRT</span> Token <br /><span className="text-[30px] lg:text-[45px] font-bold text-[#0946F6] ubuntu-bold">Qtum</span> DeFi.
                     </div>
-                    <a href="#" className="w-[160px] lg:w-[218px] mt-[30px] lg:mt-[40px]"><div className="hidden sm:flex cursor-pointer bg-[#FFE184] rounded-full w-[160px] lg:w-[218px] py-3 lg:py-4 justify-center font-semibold text-[14px] lg:text-[20px]" style={{transform: "none"}}>Download App</div></a>
+                    <a href="#" className="w-[160px] lg:w-[218px] mt-[30px] lg:mt-[40px]"><div className="hidden sm:flex cursor-pointer bg-[#ff914d] rounded-full w-[160px] lg:w-[218px] py-3 lg:py-4 justify-center font-semibold text-[14px] lg:text-[20px]" style={{transform: "none"}}>Download App</div></a>
                 </div>
             </div>
             {/* carousel */}
@@ -23,9 +23,6 @@ const Hero = () => {
                         </div>
                         <div style={{ width: "0px"}}>
                         <a href="#"><img className="w-full rounded-[14px]" alt="gallery_img" src="gallery-img2.png"/></a>
-                        </div>
-                        <div style={{ width: "0px"}}>
-                        <a href="#"><img className="w-full rounded-[14px]" alt="gallery_img" src="gallery-img3h.png"/></a>
                         </div>
                         <div style={{ width: "0px"}}>
                         <a href="#"><img className="w-full rounded-[14px]" alt="gallery_img" src="gallery-img4.png"/></a>
@@ -53,9 +50,6 @@ const Hero = () => {
                             <a href="#"><img className="w-[260px] lg:w-[310px] xl:w-[426px] h-[120px] lg:h-[155px] xl:h-[180px] rounded-[14px]" alt="gallery_img" src="gallery-img2.png"/></a>
                         </div>
                         <div>
-                            <a href="#"><img className="w-[260px] lg:w-[310px] xl:w-[426px] h-[120px] lg:h-[155px] xl:h-[180px] rounded-[14px]" alt="gallery_img" src="gallery-img3.png"/></a>
-                        </div>
-                        <div>
                             <a href="#"><img className="w-[260px] lg:w-[310px] xl:w-[426px] h-[120px] lg:h-[155px] xl:h-[180px] rounded-[14px]" alt="gallery_img" src="gallery-img4.png"/></a>
                         </div>
                         <div>
@@ -66,7 +60,7 @@ const Hero = () => {
             </div>
             {/* button */}
             <div className='block sm:hidden'>
-                <a href="#" className="bg-[#FFE184] flex sm:hidden mt-[46px] cursor-pointer rounded-full w-[218px] py-4 justify-center text-[20px] font-semibold">Download App</a>
+                <a href="#" className="bg-[#ff914d] flex sm:hidden mt-[46px] cursor-pointer rounded-full w-[218px] py-4 justify-center text-[20px] font-semibold">Download App</a>
             </div>
         </div>
       </div>
