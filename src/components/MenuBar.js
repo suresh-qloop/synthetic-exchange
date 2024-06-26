@@ -69,8 +69,8 @@ const MenuBar = () => {
                                             </div>
                                         </div>
                                         <div className='w-[40%] xl:w-[50%]'>
-                                            <a className="text-[#616161] inline-block font-bold text-[20px] lg:text-[24px] MatterBold Header_drop_down_a__QcFb6 font-medium hover:text-black hover:underline" href="#">Wealth
-                                                <img alt="" className="mt-[25px] lg:mt-[10px] w-full" src="/OTC.png" />
+                                            <a className="text-[#616161] inline-block font-bold text-[20px] lg:text-[24px] MatterBold Header_drop_down_a__QcFb6 font-medium hover:text-black hover:underline" href="#">Rewards
+                                                <img alt="" className="mt-[25px] lg:mt-[10px] w-full" src="/gallery-img3.png" />
                                             </a>
                                         </div>
                                     </div>
@@ -89,15 +89,7 @@ const MenuBar = () => {
                                     <div className='z-10 absolute left-[40px] lg:left-[50px] xl:left-[31px] 2xl:left-[139px] top-[141px]  w-[90%] xl:w-[95%] 2xl:w-[82%] pt-[30px] xl:pt-[42px] px-[30px] xl:px-[86px] animate-fade-in flex justify-between' onMouseEnter={() => handleMouseEnter(2)}
                                         onMouseLeave={() => handleMouseLeave()}>
                                         <div className='w-[55%] lg:w-[60%] flex flex-wrap'>
-                                            <a className="w-[50%] text-[#616161] font-bold text-[16px] lg:text-[18px] xl:text-[20px] MatterBold Header_drop_down_a__QcFb6 hover:text-black hover:underline" href="#">About Us</a>
-                                            <a className="w-[50%] text-[#616161] font-bold text-[16px] lg:text-[18px] xl:text-[20px] MatterBold Header_drop_down_a__QcFb6 hover:text-black hover:underline" href="#">Contact Us</a>
-                                            <a className="w-[50%] text-[#616161] font-bold text-[16px] lg:text-[18px] xl:text-[20px] MatterBold Header_drop_down_a__QcFb6 hover:text-black hover:underline" href="#">News</a>
-                                            <a className="w-[50%] text-[#616161] font-bold text-[16px] lg:text-[18px] xl:text-[20px] MatterBold Header_drop_down_a__QcFb6 hover:text-black hover:underline" href="#">Support</a>
-                                            <a className="w-[50%] text-[#616161] font-bold text-[16px] lg:text-[18px] xl:text-[20px] MatterBold Header_drop_down_a__QcFb6 hover:text-black hover:underline" href="#">Crypto Assets</a>
-                                            <a className="w-[50%] text-[#616161] font-bold text-[16px] lg:text-[18px] xl:text-[20px] MatterBold Header_drop_down_a__QcFb6 hover:text-black hover:underline" href="#">Career</a>
-                                        </div>
-                                        <div className='w-[45%] lg:w-[40%]'>
-                                            <a className="h-[262px] Header_drop_down_a__QcFb6" href="#"><div className="text-[#616161] text-[16px] lg:text-[18px] xl:text-[20px] font-bold mb-[20px] MatterBold block hover:text-black hover:underline">Learn</div><img src="/learn.png" alt="learn" /></a>
+                                            <a className="w-[50%] text-[#616161] font-bold text-[16px] lg:text-[18px] xl:text-[20px] MatterBold Header_drop_down_a__QcFb6 hover:text-black hover:underline" href="#">Cryptoken Board</a>
                                         </div>
                                     </div>
                                 </>
@@ -115,16 +107,7 @@ const MenuBar = () => {
                                     <div className='z-10 absolute left-[40px] lg:left-[50px] xl:left-[31px] 2xl:left-[139px] top-[141px] justify-between flex py-[20px] lg:py-[30px] xl:py-[40px] px-[25px] lg:px-[40px] xl:px-[60px] w-[90%] xl:w-[95%] 2xl:w-[82%] animate-fade-in' onMouseEnter={() => handleMouseEnter(3)}
                                         onMouseLeave={() => handleMouseLeave()}>
                                         <div className=' text-center w-[254px] h-[174px]'>
-                                            <a className="text-[#616161] font-semibold text-[14px] lg:text-[16px] xl:text-[18px] MatterBold block Header_drop_down_a__QcFb6 hover:text-black hover:underline" href="#"><img className="mb-[20px]" src="/Virgo_Boost_Program.png" alt="learn" />Virgo Boost Program</a>
-                                        </div>
-                                        <div className='text-center mx-[16px] w-[254px] h-[174px]'>
-                                            <a className="text-[#616161] font-semibold text-[14px] lg:text-[16px] xl:text-[18px] MatterBold block Header_drop_down_a__QcFb6 hover:text-black hover:underline" href="#"><img className="mb-[20px]" src="/ReferralProgramV3.png" alt="tier" />Referral Program</a>
-                                        </div>
-                                        <div className='text-center mx-[16px] w-[254px] h-[174px]'>
-                                            <a className="text-[#616161] font-semibold text-[14px] lg:text-[16px] xl:text-[18px] MatterBold block Header_drop_down_a__QcFb6 hover:text-black hover:underline" href="#"><img className="mb-[20px]" src="/Tiered_Banner.png" alt="learn" />Tiered Rewards Program</a>
-                                        </div>
-                                        <div className='text-center w-[254px] h-[174px]'>
-                                            <a className="text-[#616161] font-semibold text-[14px] lg:text-[16px] xl:text-[18px] MatterBold block Header_drop_down_a__QcFb6 hover:text-black hover:underline" href="#"><img className="mb-[20px]" src="/Virgo_Plus_Program.png" alt="plus" />Virgo Plus Program</a>
+                                            <a className="text-[#616161] font-semibold text-[14px] lg:text-[16px] xl:text-[18px] MatterBold block Header_drop_down_a__QcFb6 hover:text-black hover:underline" href="#"><img className="mb-[20px]" src="/komodo-wallet.png" alt="learn" />Komodo Wallet</a>
                                         </div>
                                     </div>
                                 </>
@@ -190,32 +173,17 @@ const MenuBar = () => {
                                 <a className="block align-middle mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="/crt-token"><img alt="" className="mr-[18px] w-[26px] inline" src="/small-crt.png" /><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>CRT Token</font></font></a>
                                 <a className="block align-middle mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="#"><img alt="" className="mr-[18px] w-[26px] inline" src="/fees.png" /><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>Rate Standard</font></font></a>
                                 <a className="block align-middle mb-[26px] text-[#616161] font-semibold text-[18px] Header_drop_down_a__QcFb6" href="#"><img alt="" className="mr-[18px] w-[26px] inline" src="/api.png" /><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>API</font></font></a>
-                                <a className="text-[#616161] font-semibold mb-[26px] inline-block text-[18px]  w-full Header_drop_down_a__QcFb6" href="#"><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>wealth</font></font></a>
+                                <a className="text-[#616161] font-semibold mb-[26px] inline-block text-[18px]  w-full Header_drop_down_a__QcFb6" href="#"><font style={{ verticalAlign: "inherit" }}><font style={{ verticalAlign: "inherit" }}>Rewards</font></font></a>
                             </div>
                         </Panel>
                         <Panel header="Top Traders" key="2">
                             <div className='bg-[#F7F5FF] px-[16px] py-[12px]'>
-                                <a className="block mb-[24px] text-[#616161] font-semibold text-[18px]  Header_drop_down_a__QcFb6" href="#">About Us</a>
-                                <a className="block mb-[24px] text-[#616161] font-semibold text-[18px]  Header_drop_down_a__QcFb6" href="#">Contact Us</a>
-                                <a className="block mb-[24px] text-[#616161] font-semibold text-[18px]  Header_drop_down_a__QcFb6" href="#">Support</a>
-                                <a className="block mb-[24px] text-[#616161] font-semibold text-[18px]  Header_drop_down_a__QcFb6" href="#">Crypto Assets</a>
-                                <a className="block mb-[24px] text-[#616161] font-semibold text-[18px]  Header_drop_down_a__QcFb6" href="#">News</a>
-                                <a className="block mb-[12px] text-[#616161] font-semibold text-[18px]  Header_drop_down_a__QcFb6" href="#">Career</a>
+                                <a className="block mb-[24px] text-[#616161] font-semibold text-[18px]  Header_drop_down_a__QcFb6" href="#">Cryptoken Board</a>
                             </div>
-                            <a className="!text-[#616161] pt-[12px] px-[16px] font-semibold text-[18px] pb-[20px] block bg-white" href="#"><div className="mb-[12px]">Learn</div><img src="/learn.png" alt="learn" /></a>
                         </Panel>
                         <Panel header="DEX" key="3">
                             <div className='py-[8px] px-[16px]'>
-                                <a className="text-[#616161] font-semibold text-[18px] block Header_drop_down_a__QcFb6" href="#">Virgo Boost Program<img className="w-full mt-[12px]" src="/Virgo_Boost_Program.png" alt="tier" /></a>
-                            </div>
-                            <div className='py-[8px] px-[16px]'>
-                                <a className="text-[#616161] font-semibold text-[18px] block Header_drop_down_a__QcFb6" href="#">Referral Program<img className="w-full mt-[12px]" src="/ReferralProgramV3.png" alt="learn" /></a>
-                            </div>
-                            <div className='py-[8px] px-[16px]'>
-                                <a className="text-[#616161] font-semibold text-[18px] block Header_drop_down_a__QcFb6" href="#">Tiered Rewards Program<img className="w-full mt-[12px]" src="/Tiered_Banner.png" alt="tier" /></a>
-                            </div>
-                            <div className='py-[8px] px-[16px]'>
-                                <a className="text-[#616161] font-semibold text-[18px] block Header_drop_down_a__QcFb6" href="#">Virgo Plus Program<img className="w-full mt-[12px]" src="/Virgo_Plus_Program.png" alt="plus" /></a>
+                                <a className="text-[#616161] font-semibold text-[18px] block Header_drop_down_a__QcFb6" href="#">Komodo Wallet<img className="w-full mt-[12px]" src="/komodo-wallet.png" alt="wallet" /></a>
                             </div>
                         </Panel>
                         <Panel header="Gift Card" key="4">
@@ -227,14 +195,6 @@ const MenuBar = () => {
                             </div>
                         </Panel>
                     </Collapse>
-                    <div className='mt-[32px] px-[16px] h-[60px] mb-[16px]'>
-                        <div className=' w-1/2 float-left pr-[9px]'>
-                            <a href="#"><img alt="" className="w-full" src="/app_store_download.svg" /></a>
-                        </div>
-                        <div className=' w-1/2 float-right pr-[9px]'>
-                            <a href="#"><img alt="" className="w-full" src="/google_play_download.svg" /></a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

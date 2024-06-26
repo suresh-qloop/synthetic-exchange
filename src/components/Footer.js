@@ -138,7 +138,7 @@ const Footer = () => {
                 <div className='flex flex-col justify-center mx-auto lg:pr-[75px]'>
                     <div className='flex items-center lg:mr-[42px] mb-[24px] sm:mb-[0px] justify-center'>
                         <img src="/qtum.png" alt="Qtum" className='h-[15px] xl:h-[24px] mr-[16px] sm:mr-[14px] lg:mr-[18px]' />
-                        <p className='text-[14px] sm:text-[13px] lg:text-[14px] xl:text-[18px] text-[#616161]'>FINTRAC Registered MSB # M19955733 Restricted Dealer registered with CSA</p>
+                        <p className='text-[14px] sm:text-[13px] lg:text-[14px] xl:text-[18px] text-[#616161]'>CRT-QRC20 smart contracts are executed over Qtum virtual machine.</p>
                     </div>
                 </div>
             </div>
