@@ -18,8 +18,14 @@ const Hero = () => {
                     <div className='text-[30px] lg:text-[44px] xl:text-[45px] font-bold sm:text-left text-center ubuntu-bold'>
                         Power&#39;d by <span className="text-[30px] lg:text-[44px] xl:text-[45px] font-bold bg-gradient-to-r from-green-500 via-orange-500 to-red-500 bg-clip-text text-transparent ubuntu-bold">$CRT</span> Token <br /><span className="text-[30px] lg:text-[44px] xl:text-[45px] font-bold text-[#0946F6] ubuntu-bold">Qtum</span> DeFi.
                     </div>
-                    <a href="#" className="w-[160px] lg:w-[218px] mt-[30px] lg:mt-[40px]"><div className="hidden sm:flex cursor-pointer bg-[#ff914d] rounded-full w-[160px] lg:w-[218px] py-3 lg:py-4 justify-center font-semibold text-[14px] lg:text-[20px]" style={{transform: "none"}}>Download App</div></a>
+                    <a href="#" className="w-[160px] lg:w-[218px] mt-[30px] lg:mt-[40px] hidden sm:flex"><div className="hidden sm:flex cursor-pointer bg-[#ff914d] rounded-full w-[160px] lg:w-[218px] py-3 lg:py-4 justify-center font-semibold text-[14px] lg:text-[20px]" style={{transform: "none"}}>Download App</div></a>
                 </div>
+            </div>
+            <div className='block sm:hidden'>
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+                <div className="w-full h-auto">
+                    <dotlottie-player src="https://lottie.host/1fee5ab9-21d0-4152-88dc-b6a54535a0f8/sKPpPFJnMD.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                    </div>
             </div>
             {/* carousel */}
             <div>
