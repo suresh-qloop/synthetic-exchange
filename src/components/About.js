@@ -12,12 +12,12 @@ const About = () => {
                             </p>
                         </div>
                         <div className='sm:col-span-5'>
-                            <img src="/img3.png" alt="about" />
+                            <img src="/about-us.png" alt="About Us" />
                         </div>
                     </div>
                     <div className='grid items-center grid-cols-1 gap-[20px] lg:gap-[40px] xl:gap-[80px] sm:grid-cols-12 lg:mt-[20px] xl:mt-[50px] mb-[64px] sm:mb-[80px]'>
                         <div className='order-2 sm:order-1 sm:col-span-5'>
-                            <img src="/img3.png" alt="about" />
+                            <img src="/synthetic-chain.png" alt="Synthetic Chain" />
                         </div>
                         <div className='order-1 sm:order-2 sm:col-span-7'>
                             <div className='text-[22px] lg:text-[30px] xl:text-[34px] font-bold text-[#262626] ubuntu-bold'>Synthetic Chain</div>
@@ -32,12 +32,12 @@ const About = () => {
                             </p>
                         </div>
                         <div className='sm:col-span-5'>
-                            <img src="/img3.png" alt="about" />
+                            <img src="/electrum-wallet.png" alt="Electrum Wallet" />
                         </div>
                     </div>
                     <div className='grid items-center grid-cols-1 gap-[20px] lg:gap-[40px] xl:gap-[80px] sm:grid-cols-12 lg:mt-[20px] xl:mt-[50px] mb-[64px] sm:mb-[80px]'>
                         <div className='order-2 sm:order-1 sm:col-span-5'>
-                            <img src="/img3.png" alt="about" />
+                            <img src="/coin-gecko.png" alt="Coin Gecko" />
                         </div>
                         <div className='order-1 sm:order-2 sm:col-span-7'>
                             <div className='text-[22px] lg:text-[30px] xl:text-[34px] font-bold text-[#262626] ubuntu-bold'>Official Partner CoinGecko</div>
