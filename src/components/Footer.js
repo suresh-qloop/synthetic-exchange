@@ -93,7 +93,7 @@ const Footer = () => {
                     <div className='flex flex-col sm:h-auto'>
                         <h1 className='pt-[10px] sm:pt-0 pb-[16px] sm:pb-[32px] text-[15px] lg:text-[16px] xl:text-[20px] text-[#343434] font-extrabold'>More Products</h1>
                         <Link href="#" className='hidden sm:block sm:!opacity-100 pl-[8px] sm:pl-0 pb-[15px] sm:text-[13px] lg:text-[14px] xl:text-[18px] font-medium text-[#616161]'>API</Link>
-                        <Link href="https://88456c-e3.myshopify.com/password" className='hidden sm:block sm:!opacity-100 pl-[8px] sm:pl-0 pb-[15px] sm:text-[13px] lg:text-[14px] xl:text-[18px] font-medium text-[#616161]'>Shopify</Link>
+                        <Link href="https://88456c-e3.myshopify.com" className='hidden sm:block sm:!opacity-100 pl-[8px] sm:pl-0 pb-[15px] sm:text-[13px] lg:text-[14px] xl:text-[18px] font-medium text-[#616161]'>Shopify</Link>
                     </div>
                     <div className='flex flex-col sm:h-auto'>
                         <h1 className='pt-[10px] sm:pt-0 pb-[16px] sm:pb-[32px] text-[15px] lg:text-[16px] xl:text-[20px] text-[#343434] font-extrabold'>Resources</h1>
